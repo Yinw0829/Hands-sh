@@ -1,0 +1,110 @@
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  "  ng-controller="warehouse">
+    <!-- model -->
+    <div class="col">
+        <!-- model header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <h1 class="m-n font-thin h3 text----/++4black">简历信息</h1>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-md">
+            <div class="panel-body">
+                <form name="form" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label h1" ng-bind="Data.name">张三</label>
+                        <label class="control-label h3" ng-bind="Data.age">23岁</label>
+                        <label class="control-label h3" ng-bind="Data.gender">男</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" ng-bind="Date.phone"><strong>联系电话：</strong></label>
+                        <label class=" control-label" ng-bind="Date.phone">13569874563</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" ng-bind="Data.mien"><strong>个人风采：</strong></label>
+                        <div class="row">
+                            <div class="col-sm-1">
+                                <a href="#" class="thumbnail">
+                                    <img src="tpl/a0.jpg">
+                                </a>
+                            </div>
+                            <div class="col-sm-1">
+                                <a href="#" class="thumbnail">
+                                    <img src="img/a0.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" ng-bind="Data.describe"><strong>经验描述：</strong></label>
+                        <label class="col-sm-10">
+                            <p>1. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's
+                                organic lomo retro fanny pack lo-fi farm-to-table readymade.
+                                Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles
+                                etsy salvia banksy hoodie helvetica. DIY synth PBR banksy
+                                irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever
+                                gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk
+                                vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog
+                                stumptown.</p>
+                            <p>2. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's
+                                organic lomo retro fanny pack lo-fi farm-to-table readymade.
+                                Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles
+                                etsy salvia banksy hoodie helvetica. DIY synth PBR banksy
+                                irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever
+                                gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk
+                                vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog
+                                stumptown.</p>
+                            <p>3. Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's
+                                organic lomo retro fanny pack lo-fi farm-to-table readymade.
+                                Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles
+                                etsy salvia banksy hoodie helvetica. DIY synth PBR banksy
+                                irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever
+                                gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk
+                                vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog
+                                stumptown.</p>
+                            <p>4. 中国共产党经历了28年浴血奋战，用鲜血和生命铸就了红色江山；又经过60多年奋发图强，创造了西方几百年才达到的辉煌成就。 　　历史已经证明，由共产党领导中国走社会主义道路，
+                                是历史和人民的选择，也是最适合中国国情、最具先进性、最富生命力的政 治制度。如果政治体制更变，不仅党要成为千古罪人，而且对世界将产生灾难性后果。</p>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label"><strong>入职记录：</strong></label>
+                        <div class="table-responsive">
+                            <table class="table table-striped b-t b-light">
+                                <thead>
+                                <tr>
+                                    <th>公司名称</th>
+                                    <th>面试岗位</th>
+                                    <th>申请时间</th>
+                                    <th>评价详细</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td ng-bind="Data.Post">嘉兴禾码科技</td>
+                                    <td ng-bind="Data.applicationTime">服务员</td>
+                                    <td ng-bind="Data.state">2016.11.10</td>
+                                    <td>
+                                        <button class="btn  btn-sm btn-success btn-addon">评价详细</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td ng-bind="Data.Post">南京冰狼科技</td>
+                                    <td ng-bind="Data.applicationTime">迎宾员</td>
+                                    <td ng-bind="Data.state">2015.10.10</td>
+                                    <td>
+                                        <button class="btn  btn-sm btn-success btn-addon">评价详细</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

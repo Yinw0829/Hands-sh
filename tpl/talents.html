@@ -1,0 +1,76 @@
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  ">
+    <!-- model -->
+    <div class="col">
+        <!-- model header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <h1 class="m-n font-thin h3 text-black">人才库</h1>
+                </div>
+            </div>
+        </div>
+        <!-- / model header -->
+        <div class="wrapper-md">
+                <div class="wrapper-md">
+                    <div class="panel panel-default">
+                        <div class="table-responsive">
+                            <table class="table m-b-none" ui-jq="footable" data-filter="#filter" data-page-size="15">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>姓名</th>
+                                    <th>联系电话</th>
+                                    <th>入职次数</th>
+                                    <th>最近入职时间</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td ui-sref="app.resume">张三</td>
+                                    <td>13526987456</td>
+                                    <td>3次</td>
+                                    <td>2016-10-10</td>
+                                    <td>
+                                        <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.particular"><i class="icon icon-grid"></i>详细
+                                        </button>
+                                        <button class="btn  btn-sm btn-danger btn-addon"><i
+                                                class="glyphicon  glyphicon-remove"></i>删除
+                                        </button>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td ui-sref="app.resume">张三</td>
+                                    <td>13526987456</td>
+                                    <td>3次</td>
+                                    <td>2016-10-10</td>
+                                    <td>
+                                        <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.particular"><i class="icon icon-grid"></i>详细
+                                        </button>
+                                        <button class="btn  btn-sm btn-danger btn-addon"><i
+                                                class="glyphicon  glyphicon-remove"></i>删除
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tfoot class="hide-if-no-paging">
+                                <tr>
+                                    <td colspan="10" class="text-center">
+                                        <ul class="pagination"></ul>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+<!--<div class="container w-xxl w-auto-xs" ng-init="app.settings.container = false;">-->
+    <!--<div class="m-b-lg">-->
+        <!--<div class="wrapper text-center">-->
+            <!--<strong>登录</strong>-->
+        <!--</div>-->
+        <!--<div ng-app="myApp">-->
+            <!--<form name="myForm" class="form-validation" ng-controller="firstController">-->
+                <!--<div class="text-danger wrapper text-center" ng-show="authError">-->
+                <!--</div>-->
+                <!--<div class="list-group list-group-sm">-->
+                    <!--<div class="list-group-item" ng-class="{'has-error':myForm.username.$dirty && myForm.username.$invalid}">-->
+                        <!--<input type="text" autocomplete="off" name="username" ng-pattern="/^[a-zA-Z]{1}/"-->
+                               <!--ng-required="true"-->
+                               <!--ng-minlength="5" ng-maxlength="10" ng-model="data.username"-->
+                               <!--class="form-control" placeholder="登录账号">-->
+                        <!--<div ng-show="myForm.username.$dirty && myForm.username.$error.maxlength"-->
+                             <!--class="alert alert-danger help-block">-->
+                            <!--用户名长度不能超过10位-->
+                        <!--</div>-->
+                        <!--<div ng-show="myForm.username.$dirty && myForm.username.$error.minlength"-->
+                             <!--class="alert alert-danger help-block">-->
+                            <!--用户名长度不能小于5位-->
+                        <!--</div>-->
+                        <!--<div ng-show="myForm.username.$dirty && myForm.username.$error.pattern"-->
+                             <!--class="alert alert-danger help-block">-->
+                            <!--用户名必须以英文字母开始-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="list-group-item" ng-class="{'has-error':myForm.password.$dirty && myForm.password.$invalid}">-->
+                        <!--<input type="password" autocomplete="off" name="password" ng-required="true" ng-minlength="5"-->
+                               <!--ng-maxlength="10" ng-model="data.password"-->
+                               <!--class="form-control" placeholder="密码">-->
+                        <!--<div ng-show="myForm.username.$dirty && myForm.password.$error.maxlength"-->
+                             <!--class="alert alert-danger help-block">-->
+                            <!--密码长度不能超过10位-->
+                        <!--</div>-->
+                        <!--<div ng-show="myForm.username.$dirty && myForm.password.$error.minlength"-->
+                             <!--class="alert alert-danger help-block">-->
+                            <!--密码长度不能小于5位-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<button type="submit" class="btn btn-lg btn-success btn-block" ng-click="login()" ng-disabled='form.$invalid'>登录</button>-->
+                    <!--<div class="text-center m-t m-b"><a ui-sref="access.password">忘记密码？</a></div>-->
+                    <!--<div class="line line-dashed"></div>-->
+                    <!--<p class="text-center"><small>没有账号？</small></p>-->
+
+                <!--</div>-->
+            <!--</form>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<a ui-sref="access.signup" class="btn btn-lg btn-default btn-block">创建账号</a>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
+    app.settings.asideFolded = false;
+    app.settings.asideDock = false;
+  " ng-controller="warehouse">
+    <!-- model -->
+    <div class="col">
+        <!-- model header -->
+        <div class="bg-light lter b-b wrapper-md">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12">
+                    <h1 class="m-n font-thin h3 text-black">招聘库</h1>
+                </div>
+            </div>
+        </div>
+        <!-- / model header -->
+        <div class="wrapper-md">
+            <tabset class="tab-container">
+                <tab>
+                    <tab-heading>
+                        面试状态
+                    </tab-heading>
+                    <div class="wrapper-md">
+                        <div class="panel panel-default">
+                            <div class="table-responsive">
+                                <table class="table m-b-none" ui-jq="footable" data-filter="#filter" data-page-size="15">
+                                    <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>标题</th>
+                                        <th>岗位名称</th>
+                                        <th>姓名</th>
+                                        <th>联系电话</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>欧尚发健身培训宣传单</td>
+                                        <td>促销员</td>
+                                        <td>张三</td>
+                                        <td>13526987456</td>
+                                        <td>待邀请</td>
+                                        <td>
+                                            <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-cursor"></i>邀请面试</button>
+                                            <button class="btn  btn-sm btn-danger btn-addon"><i class="fa fa-unlock-alt"></i>拒绝面试</button>
+                                            <button class="btn  btn-sm btn-info btn-addon"  ui-sref="app.auditdemo({itemID:item.id})"><i class="icon icon-grid"></i>详细</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>欧尚发健身培训宣传单</td>
+                                        <td>促销员</td>
+                                        <td>张三</td>
+                                        <td>13526987456</td>
+                                        <td>待邀请</td>
+                                        <td>
+                                            <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-cursor"></i>邀请面试</button>
+                                            <button class="btn  btn-sm btn-danger btn-addon"><i class="fa fa-unlock-alt"></i>拒绝面试</button>
+                                            <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute"><i class="icon icon-grid"></i>详细</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot class="hide-if-no-paging">
+                                    <tr>
+                                        <td colspan="10" class="text-center">
+                                            <ul class="pagination"></ul>
+                                        </td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </tab>
+                <tab>
+                <tab-heading>
+                    入职状态
+                </tab-heading>
+                <div class="wrapper-md">
+                    <div class="panel panel-default">
+                        <div class="table-responsive">
+                            <table class="table m-b-none" ui-jq="footable" data-filter="#filter" data-page-size="15">
+                                <thead>
+                                <tr>
+                                    <th>序号</th>
+                                    <th>标题</th>
+                                    <th>岗位名称</th>
+                                    <th>姓名</th>
+                                    <th>联系电话</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>欧尚发健身培训宣传单</td>
+                                    <td>促销员</td>
+                                    <td>张三</td>
+                                    <td>13526987456</td>
+                                    <td>待入职</td>
+                                    <td>
+                                        <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-cursor"></i>邀请入职</button>
+                                        <button class="btn  btn-sm btn-danger btn-addon"><i class="fa fa-unlock-alt"></i>拒绝入职</button>
+                                        <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute"><i class="icon icon-grid"></i>详细</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>欧尚发健身培训宣传单</td>
+                                    <td>促销员</td>
+                                    <td>张三</td>
+                                    <td>13526987456</td>
+                                    <td>待入职</td>
+                                    <td>
+                                        <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-cursor"></i>邀请入职</button>
+                                        <button class="btn  btn-sm btn-danger btn-addon"><i class="fa fa-unlock-alt"></i>拒绝入职</button>
+                                        <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute"><i class="icon icon-grid"></i>详细</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                                <tfoot class="hide-if-no-paging">
+                                <tr>
+                                    <td colspan="10" class="text-center">
+                                        <ul class="pagination"></ul>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </tab>
+                <tab>
+                    <tab-heading>
+                        评价状态
+                    </tab-heading>
+                    <div class="wrapper-md">
+                        <div class="panel panel-default">
+                            <div class="table-responsive">
+                                <table class="table m-b-none" ui-jq="footable" data-filter="#filter" data-page-size="15">
+                                    <thead>
+                                    <tr>
+                                        <th>序号</th>
+                                        <th>标题</th>
+                                        <th>岗位名称</th>
+                                        <th>姓名</th>
+                                        <th>联系电话</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>欧尚发健身培训宣传单</td>
+                                        <td>促销员</td>
+                                        <td>张三</td>
+                                        <td>13526987456</td>
+                                        <td>待评价</td>
+                                        <td>
+                                            <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-pencil"></i>待评价</button>
+                                            <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute" ui-sref="app.auditdemo({itemID:item.id})"><i class="icon icon-grid"></i>详细</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>欧尚发健身培训宣传单</td>
+                                        <td>促销员</td>
+                                        <td>张三</td>
+                                        <td>13526987456</td>
+                                        <td>待评价</td>
+                                        <td>
+                                            <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-pencil"></i>待评价</button>
+                                            <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute"><i class="icon icon-grid"></i>详细</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                    <tfoot class="hide-if-no-paging">
+                                    <tr>
+                                        <td colspan="10" class="text-center">
+                                            <ul class="pagination"></ul>
+                                        </td>
+                                    </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+</div>
