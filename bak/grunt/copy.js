@@ -7,11 +7,11 @@ module.exports = {
             // angular
             {src: "bower_components/angular/angular.js", dest: "src/vendor/angular/angular.js"},
             {src: "bower_components/angular-animate/angular-animate.js", dest: "src/vendor/angular/angular-animate/angular-animate.js"},
-            {src: "bower_components/angular-cookies/angular-cookies.js", dest: "src/vendor/angular/angular-cookies/angular-cookies.js"},            
+            {src: "bower_components/angular-cookies/angular-cookies.js", dest: "src/vendor/angular/angular-cookies/angular-cookies.js"},
             {src: "bower_components/angular-resource/angular-resource.js", dest: "src/vendor/angular/angular-resource/angular-resource.js"},
             {src: "bower_components/angular-sanitize/angular-sanitize.js", dest: "src/vendor/angular/angular-sanitize/angular-sanitize.js"},
             {src: "bower_components/angular-touch/angular-touch.js", dest: "src/vendor/angular/angular-touch/angular-touch.js"},
-          
+
             // bootstrap
             {src: "bower_components/bootstrap/dist/css/bootstrap.css", dest: "src/css/bootstrap.css"},
             {src: "bower_components/bootstrap/dist/js/bootstrap.js", dest: "src/vendor/jquery/bootstrap.js"},
@@ -32,6 +32,10 @@ module.exports = {
             {src: "bower_components/angular-ui-utils/ui-utils.js", dest: "src/vendor/angular/angular-ui-utils/ui-utils.js"},
             {src: "bower_components/ngstorage/ngStorage.js", dest: "src/vendor/angular/ngstorage/ngStorage.js"},
             {src: "bower_components/oclazyload/dist/ocLazyLoad.js", dest: "src/vendor/angular/oclazyload/ocLazyLoad.js"},
+            //ng-file-upload
+            // {src: "bower_components/angular-ui-utils/ui-utils.js", dest: "src/vendor/modules/ng-file-upload/ng-file-upload.min.js"},
+            // {src: "bower_components/angular-ui-utils/ui-utils.js", dest: "src/vendor/modules/ng-file-upload/ng-file-upload-shim.js"},
+
 
             // modules for lazy load
             {src: "bower_components/angular-ui-select/dist/select.min.js", dest: "src/vendor/modules/angular-ui-select/select.min.js"},
@@ -41,7 +45,7 @@ module.exports = {
             {src: "bower_components/textAngular/dist/textAngular-sanitize.min.js", dest: "src/vendor/modules/textAngular/textAngular-sanitize.min.js"},
 
             {src: "bower_components/venturocket-angular-slider/build/angular-slider.min.js", dest: "src/vendor/modules/angular-slider/angular-slider.min.js"},
-            
+
             {src: "bower_components/angular-bootstrap-nav-tree/dist/abn_tree_directive.js", dest: "src/vendor/modules/angular-bootstrap-nav-tree/abn_tree_directive.js"},
             {src: "bower_components/angular-bootstrap-nav-tree/dist/abn_tree.css", dest: "src/vendor/modules/angular-bootstrap-nav-tree/abn_tree.css"},
 
@@ -49,9 +53,9 @@ module.exports = {
 
             {src: "bower_components/ngImgCrop/compile/minified/ng-img-crop.js", dest: "src/vendor/modules/ngImgCrop/ng-img-crop.js"},
             {src: "bower_components/ngImgCrop/compile/minified/ng-img-crop.css", dest: "src/vendor/modules/ngImgCrop/ng-img-crop.css"},
-            
+
             // {src: "bower_components/angular-ui-calendar/src/calendar.js", dest: "src/vendor/modules/angular-ui-calendar/calendar.js"},
-            
+
             {src: "bower_components/angular-ui-map/ui-map.js", dest: "src/vendor/modules/angular-ui-map/ui-map.js"},
 
             {src: "bower_components/angularjs-toaster/toaster.js", dest: "src/vendor/modules/angularjs-toaster/toaster.js"},
@@ -66,8 +70,6 @@ module.exports = {
             {src: "bower_components/videogular-overlay-play/overlay-play.min.js", dest: "src/vendor/modules/videogular/plugins/overlay-play.min.js"},
             {src: "bower_components/videogular-poster/poster.min.js", dest: "src/vendor/modules/videogular/plugins/poster.min.js"},
             {src: "bower_components/videogular-ima-ads/ima-ads.min.js", dest: "src/vendor/modules/videogular/plugins/ima-ads.min.js"},
-
-
         ]
     },
     dist: {

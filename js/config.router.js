@@ -33,10 +33,6 @@ angular.module('app')
                           }]
                   }
               })
-              .state('app.all', {
-                  url: '/user',
-                  templateUrl: 'tpl/all.html'
-              })
               .state('app.job_normal', {
                   url: '/job_normal',
                   templateUrl: 'tpl/job_normal.html'
@@ -99,6 +95,7 @@ angular.module('app')
                   url: '/access',
                   template: '<div ui-view class="fade-in-right-big smooth"></div>'
               })
+
               .state('access.signin', {
                   url: '/signin',
                   templateUrl: 'tpl/page_signin.html',
@@ -115,7 +112,7 @@ angular.module('app')
                   resolve: {
                       deps: ['uiLoad',
                           function( uiLoad ){
-                              return uiLoad.load( ['js/controllers/hands.js'] );
+                              return uiLoad.load('js/controllers/page_singup.js');
                           }]
                   }
               })
