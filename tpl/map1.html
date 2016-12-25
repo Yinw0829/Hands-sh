@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>逆地理编码</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css" />
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=052fbbc689029fcffff1d43e007e1407&plugin=AMap.Geocoder"></script>
+    <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+
+<body onload="regeocoder()">
+<div id="container"></div>
+<div id="tip">
+    <b>经纬度 <span id="fist"></span> <span id="second"></span> 的地理编码结果:</b>
+    <span id="result"></span>
+    <span id="city"></span>
+    <span id="province"></span>
+</div>
+</body>
+<!--<script type="text/javascript" src="style.js"></script>-->
+</html>
+<script>
+    /**
+     * Created by iform on 2016-12-19.
+     */
+    var mapObj, geolocation;
+    var result;
+
+    function mapInit() {
+        mapObj = new AMap.Map('container'); //默认定位：初始化加载地图时，center及level属性缺省，地图默认显示用户所在城市范围
+    }
+    var map = new AMap.Map("container", {
+        resizeEnable: true,
+    });
+    //默认二个坐标点，这里应该要用IP来取位置
+    var fistMap;
+    var secondMap;
+    var marker;
+    var mapData;
+    var codeCity;
+    var codeProvince;
+    //获取页面上二个伟放经纬度的对象
+    var fistSpan = document.getElementById('fist');
+    var secondSpan = document.getElementById('second');
+
+    lnglatXY = [fistMap, secondMap]; //已知点坐标
+    function regeocoder() { //逆地理编码
+        var geocoder = new AMap.Geocoder({
+            radius: 1000,
+            extensions: "all"
+        });
+        geocoder.getAddress(lnglatXY, function (status, result) {
+            if (status === 'complete' && result.info === 'OK') {
+//                geocoder_CallBack(result);
+//                console.log(result);
+                mapData=result;
+                //省市
+                codeCity=mapData.regeocode.addressComponent.city;
+                codeProvince=mapData.regeocode.addressComponent.province;
+                document.getElementById("city").innerHTML = codeCity;
+                document.getElementById("province").innerHTML = codeProvince;
+                //区+街道+街+号+号名字，下面的if判断是当号相对应的名字是否为空，如果为空的时候不显示，不为空的时候显示
+                var district=mapData.regeocode.addressComponent.district;
+                var township=mapData.regeocode.addressComponent.township;
+                var street=mapData.regeocode.addressComponent.street;
+                var streetNumber=mapData.regeocode.addressComponent.streetNumber;
+                var aois=mapData.regeocode.aois;
+                if(aois.length!==0){
+                    var name=mapData.regeocode.aois[0].name;
+                    var address=district+township+street+streetNumber+name;
+                    document.getElementById("result").innerHTML = address;
+                }else{
+                    var address=district+township+street+streetNumber;
+                    document.getElementById("result").innerHTML = address;
+                }
+            }
+        });
+        marker = new AMap.Marker({ //加点
+            map: map,
+            position: lnglatXY
+        });
+        map.setFitView();
+    }
+    //    function geocoder_CallBack(data) {
+    //        var address = data.regeocode.formattedAddress; //返回地址描述
+    //        document.getElementById("result").innerHTML = address;
+    //    }
+    var getLng;
+    var getLat;
+    fistSpan.innerHTML = fistMap;
+    secondSpan.innerHTML = secondMap;
+    map.on('click', function (e) {
+        getLng = e.lnglat.getLng();
+        getLat = e.lnglat.getLat();
+        fistMap = getLng;
+        secondMap = getLat;
+        //改变存放经纬度对象的内容
+        fistSpan.innerHTML = fistMap;
+        secondSpan.innerHTML = secondMap;
+        //删除原来的点
+        map.remove(marker);
+        lnglatXY = [fistMap, secondMap]; //已知点坐标
+        //把点的定位再执行一次
+        regeocoder();
+        //取父窗體中的元素，放到高德取坐標的單擊事件里window.parent.document.getElementById 是固定的寫法
+        var firstTxt=window.parent.document.getElementById('firstText');
+        var secondTxt=window.parent.document.getElementById('secondText');
+        var mapTxt=window.parent.document.getElementById('mapText');
+        var cityTxt=window.parent.document.getElementById('city');
+        var provinecTxt=window.parent.document.getElementById('Province');
+        firstTxt.value=getLng;
+        secondTxt.value=getLat;
+        cityTxt.value=codeCity;
+        provinecTxt.value=codeProvince;
+        mapTxt.value=document.getElementById("result").innerHTML;
+    });
+</script>

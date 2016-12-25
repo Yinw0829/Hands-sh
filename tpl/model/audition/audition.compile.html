@@ -1,0 +1,27 @@
+<!--编辑-->
+<div class="modal-body wrapper-lg">
+    <div class="row">
+        <!--<div class="col-sm-12">-->
+            <!--<h3 class="m-t-none m-b font-thin">添加地址</h3>-->
+            <!--<form role="form">-->
+                <!--<div class="col-sm-4">-->
+                    <!--<select class="form-control input-md w-lg inline m-r" ng-model="province"-->
+                            <!--ng-options="x.code as x.name for x in cities |cityFilter:null"></select>-->
+                <!--</div>-->
+                <!--<div class="col-sm-4">-->
+                    <!--<select class="form-control input-md w-lg inline m-r" ng-model="city" name="code"-->
+                            <!--ng-show="province"-->
+                            <!--ng-options="x.code as x.name for x in cities |cityFilter:province"></select>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+        <div class="form-group">
+            <label>详细地址：</label>
+            <input type="text" class="form-control" placeholder="请输入详细地址" ng-model="item.address">
+        </div>
+        <div class="checkbox m-t-lg">
+            <button type="submit" class="btn btn-md btn-success pull-right text-uc m-t-n-xs" ng-click="comp()">
+                <strong>确定</strong></button>
+        </div>
+    </div>
+</div>

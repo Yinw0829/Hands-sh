@@ -10,11 +10,11 @@
                     <label class="col-sm-2 control-label text-right">公司名称</label>
                     <div class="col-sm-10">
                         <input type="text" autocomplete="off" name="name" ng-required="true"
-                               ng-minlength="12" ng-model="name"
+                               ng-minlength="10" ng-model="name"
                                class="form-control" placeholder="请输入公司名称">
                         <div ng-show="myForm.name.$dirty && myForm.name.$error.minlength"
                              class="alert alert-danger help-block">
-                            用户名长度不能小于12位
+                            用户名长度不能小于10位
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <!--<label class="col-sm-2 control-label text-right">验证码</label>-->
                     <!--<div class="col-sm-10">-->
                         <!--<input type="tel" name="number" autocomplete="off" maxlength="7"-->
-                               <!--ng-required="true" ng-model="userData.captcha" class="form-control"-->
+                               <!--ng-required="true" ng-model="captcha" class="form-control"-->
                                <!--placeholder="请输入图片验证码">-->
                         <!--<img ng-click="imgclick()" ng-src="{{imgUrl}}">-->
                     <!--</div>-->

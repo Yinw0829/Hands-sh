@@ -1,5 +1,6 @@
 app.filter('cityFilter', function () {
     return function (data, parentCode) {
+        console.log(parentCode);
         var filteData = [];
         angular.forEach(data, function (obj) {
             if (obj.parentCode === parentCode) {
@@ -10,25 +11,18 @@ app.filter('cityFilter', function () {
     }
 });
 
-app.controller('handsController', ['$http', '$scope', '$interval', '$state','Upload', function ($http, $scope, $interval,$state, Upload) {
-    $scope.imgUrl = 'http://localhost:8087/hands/api/captcha?time=' + (new Date()).getTime();
-    $scope.imgclick = function () {
-        $scope.imgUrl = 'http://localhost:8087/hands/api/captcha?time=' + (new Date()).getTime();
-    };
-    //
-    $http.get('http://localhost:8087/hands/api/districtList').then(function (data) {
-        $scope.cities = data.data.rows;
-        // console.log($scope.cities)
+app.controller('handsController', ['$http', '$scope', '$interval', '$state','Upload', 'httpServe', '$resource', function ($http, $scope, $interval,$state, Upload, httpServe, $resource) {
+   var url = httpServe.httpUrl;
+    var upLoad = $resource(
+        url + ':type'
+    );
+    upLoad.get({type:'districtList'},function (data) {
+        $scope.cities = data.rows;
+        console.log(data)
     });
-    $scope.parent = {
-        city: 3
-    };
-
-    $scope.userData = [{
-        cellPhone: '',
-        captcha: '',
-        type: 'REG'
-    }];
+    upLoad.save({type:'captcha'},{},function (data) {
+        $scope.captchas = data.rows;
+    });
     $scope.send = '发送验证码';
     $scope.isDisable = false;
     var time = 3; //秒
@@ -41,7 +35,7 @@ app.controller('handsController', ['$http', '$scope', '$interval', '$state','Upl
         } else {
             $http({
                 method: 'POST',
-                url: 'http://localhost:8087/hands/api/sendSms',
+                url: 'http://localhost:8087/hands/sendSms',
                 data: {cellPhone: $scope.userData.cellPhone, captcha: $scope.userData.captcha, type: 'REG'}
             })
                 .success(
@@ -69,7 +63,6 @@ app.controller('handsController', ['$http', '$scope', '$interval', '$state','Upl
         }
     };
 
-
     $scope.uploadImg = '';
     $scope.submit = function () {
         $scope.upload($scope.file);
@@ -78,7 +71,7 @@ app.controller('handsController', ['$http', '$scope', '$interval', '$state','Upl
         $scope.fileInfo = file;
         Upload.upload({
             method: 'POST',
-            url: 'http://localhost:8087/hands/enterprise/api/register',
+            url: 'http://localhost:8087/hands/enterprise/register',
             data: {
                 license: file,
                 name: $scope.name,
@@ -101,22 +94,4 @@ app.controller('handsController', ['$http', '$scope', '$interval', '$state','Upl
             }
         });
     };
-
-    function findIndex(id) {
-        //先给index设置一个初始值，为假
-        var index = -1;
-        //forEach需要二个参数，一个是对象，一个是函数，然后函数中的item代表的是$scope.cart，然后key就是最后生成的值就是item的值
-        angular.forEach($scope.cart, function (item, key) {
-            if (item.id === id) {
-                index = key;
-                return;
-            }
-        });
-        return index
-    }
-}])
-
-
-
-
-
+}]);

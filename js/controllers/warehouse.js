@@ -6,7 +6,7 @@ app.controller('warehouse', ['$scope', '$modal', '$log', function($scope, $modal
     //$scope.urlD这个是自己定义的
     $scope.open = function (size) {
         var modalInstance = $modal.open({
-            templateUrl: 'tpl/model/modal.form.html',
+            templateUrl: 'tpl/model/audition.form.html',
             controller: 'ModalInstanceCtrl',
             size: size,
             resolve: {
@@ -24,7 +24,7 @@ app.controller('warehouse', ['$scope', '$modal', '$log', function($scope, $modal
     };
     $scope.see = function (size) {
         var modalInstance = $modal.open({
-            templateUrl: 'tpl/model/modal.form.html',
+            templateUrl: 'tpl/model/audition.form.html',
             controller: 'ModalInstanceCtrl',
             size: size,
             resolve: {

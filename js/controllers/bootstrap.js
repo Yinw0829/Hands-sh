@@ -112,7 +112,7 @@
   app.controller('ModalDemoCtrl', ['$scope', '$modal', '$log', function($scope, $modal, $log) {
     $scope.items = ['item1', 'item2', 'item3'];
     $scope.urlD=[{
-      urlD1:'tpl/model/modal.form.html',
+      urlD1:'tpl/model/audition.form.html',
       urlD2:'secondContent',
       urlD3:'tpl/model/modal.particular.html'
     }];

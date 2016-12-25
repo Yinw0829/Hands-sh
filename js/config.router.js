@@ -35,11 +35,23 @@ angular.module('app')
               })
               .state('app.job_normal', {
                   url: '/job_normal',
-                  templateUrl: 'tpl/job_normal.html'
+                  templateUrl: 'tpl/job_normal.html',
+                  resolve: {
+                      deps: ['uiLoad',
+                          function( uiLoad ){
+                              return uiLoad.load('js/controllers/job-normal.js');
+                          }]
+                  }
               })
               .state('app.job_past', {
                   url: '/job_past',
-                  templateUrl: 'tpl/job_past.html'
+                  templateUrl: 'tpl/job_past.html',
+                  resolve: {
+                      deps: ['uiLoad',
+                          function( uiLoad ){
+                              return uiLoad.load('js/controllers/job-normal.js');
+                          }]
+                  }
               })
               .state('app.warehouse', {
                   url: '/warehouse',
