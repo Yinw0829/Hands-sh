@@ -1,53 +1,64 @@
-  <div class="col" ng-controller="bringList">
+<div class="col" ng-controller="bringList">
     <!-- model header -->
     <div class="bg-light lter b-b wrapper-md">
-      <div class="row">
-        <div class="col-sm-6 col-xs-12">
-          <h1 class="m-n font-thin h3 text-black">过期招聘</h1>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <h1 class="m-n font-thin h3 text-black">过期招聘</h1>
+            </div>
         </div>
-      </div>
+    </div>
+    <div class="row wrapper-sm">
+        <div class="col-sm-6 text-right col-sm-offset-5">
+            <button class="btn btn-lg btn-success btn-addon" ui-sref="app.release"
+                    ui-sref="app.auditdemo({itemID:item.id})">发布招聘
+            </button>
+        </div>
     </div>
     <div class="wrapper-md">
-      <div class="panel panel-default">
-        <div class="table-responsive">
-          <table class="table m-b-none">
-            <thead>
-            <tr>
-              <th>序号</th>
-              <th>招聘岗位</th>
-              <th>工资薪酬</th>
-              <th>结算方式</th>
-              <th>过期时间</th>
-              <th>联系人</th>
-              <th>联系电话</th>
-              <th>工作地址</th>
-              <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="y in jobprohibit">
-              <td ng-bind="$index+1"></td>
-              <td ng-bind="y.positionModel.name"></td>
-              <td ng-bind="y.salary + y.salaryTypeName"></td>
-              <td ng-bind="y.settlementTypeName"></td>
-              <td ng-bind="y.jobEndTime"></td>
-              <td ng-bind="y.contractPerson"></td>
-              <td ng-bind="y.contractPhone"></td>
-              <td ng-bind="y.jobAddress"></td>
-              <td>
-                <a href class="btn btn-success font-bold m" ng-click="Click(y.id)">查看详细</a>
-              </td>
-            </tr>
-            </tbody>
-            <tfoot class="hide-if-no-paging">
-            <tr>
-              <td colspan="10" class="text-center">
-                <ul class="pagination"></ul>
-              </td>
-            </tr>
-            </tfoot>
-          </table>
+        <div class="panel">
+            <div class="table-responsive">
+                <div class="table-responsive">
+                    <table class="table m-b-none">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>招聘岗位</th>
+                            <th>工资薪酬</th>
+                            <th>结算方式</th>
+                            <th>过期时间</th>
+                            <th>联系人</th>
+                            <th>联系电话</th>
+                            <th>工作地址</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="y in jobprohibit">
+                            <td ng-bind="$index+1"></td>
+                            <td ng-bind="y.positionModel.name"></td>
+                            <td ng-bind="y.salary + y.salaryTypeName"></td>
+                            <td ng-bind="y.settlementTypeName"></td>
+                            <td ng-bind="y.jobEndTime"></td>
+                            <td ng-bind="y.contactPerson"></td>
+                            <td ng-bind="y.contactPhone"></td>
+                            <td ng-bind="y.jobAddress"></td>
+                            <td>
+                                <button class="btn  btn-sm btn-success btn-addon" ng-click="Click(y.id)"><i
+                                        class="icon icon-grid"></i>查看详细
+                                </button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div class="row ">
+                    <div class="col-sm-12">
+                        <tm-pagination conf="disabledConf" class="paginationGid"></tm-pagination>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>

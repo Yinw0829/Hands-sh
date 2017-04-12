@@ -4,7 +4,7 @@
 
 angular.module('app')
   .controller('AppCtrl', ['$scope', '$translate', '$localStorage', '$window', 
-    function(              $scope,   $translate,   $localStorage,   $window ) {
+    function($scope,   $translate,   $localStorage,   $window ) {
       // add 'ie' classes to html
       var isIE = !!navigator.userAgent.match(/MSIE/i);
       isIE && angular.element($window.document.body).addClass('ie');
@@ -12,7 +12,7 @@ angular.module('app')
 
       // config
       $scope.app = {
-        name: 'Hands-Admin',
+        name: '企业管理后台',
         version: 'V 1.0.0',
         // for chart colors
         color: {

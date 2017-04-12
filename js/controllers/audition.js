@@ -1,12 +1,12 @@
-app.controller('audition', ['$scope', '$modal', '$log', '$resource', 'httpServe', function ($scope, $modal, $log, $resource, httpServe) {
-    $scope.url = httpServe.httpUrl + 'enterprise/';
+app.controller('audition', ['$scope', '$modal', '$log', '$resource', 'api', function ($scope, $modal, $log, $resource, api) {
+    $scope.url = api.url;
     var getAdd = $resource(
-        $scope.url + ':type',
+        $scope.url + 'address/:type',
         {
             id:'@id'
         }
     );
-    getAdd.get({type: 'address/list'}, function (data) {
+    getAdd.get({type:'list'}, function (data) {
         $scope.yaddRess = data.rows;
     });
     //新增
@@ -23,7 +23,7 @@ app.controller('audition', ['$scope', '$modal', '$log', '$resource', 'httpServe'
             }
         });
         modalInstance.result.then(function () {
-            getAdd.get({type: 'address/list'}, function (data) {
+            getAdd.get({type:'list'}, function (data) {
                 $scope.yaddRess = data.rows;
             });
         })
@@ -31,8 +31,7 @@ app.controller('audition', ['$scope', '$modal', '$log', '$resource', 'httpServe'
 
     //编辑
     $scope.see = function (id) {
-        getAdd.get({type:'address/load'},{id:id},function (data) {
-            console.log(data);
+        getAdd.get({type:'load'},{id:id},function (data) {
             $scope.item = data.result;
         });
         var modalInstance = $modal.open({
@@ -48,7 +47,7 @@ app.controller('audition', ['$scope', '$modal', '$log', '$resource', 'httpServe'
         });
 
         modalInstance.result.then(function () {
-            getAdd.get({type: 'address/list'}, function (data) {
+            getAdd.get({type: 'list'}, function (data) {
                 $scope.yaddRess = data.rows;
             });
         });
@@ -69,7 +68,7 @@ app.controller('audition', ['$scope', '$modal', '$log', '$resource', 'httpServe'
             }
         });
         modalInstance.result.then(function () {
-            getAdd.get({type: 'address/list'}, function (data) {
+            getAdd.get({type: 'list'}, function (data) {
                 $scope.yaddRess = data.rows;
             });
         })
@@ -77,7 +76,7 @@ app.controller('audition', ['$scope', '$modal', '$log', '$resource', 'httpServe'
 }]);
 //删除
 app.controller('deleteCtrl', ['$scope', '$modalInstance', '$resource',function ($scope, $modalInstance, $resource) {
-    var postName = $resource($scope.url + 'address/del');
+    var postName = $resource($scope.url + '/address/del');
     $scope.using = function (id) {
         postName.save({id:id}, function () {
             $modalInstance.close();
@@ -91,9 +90,9 @@ app.controller('deleteCtrl', ['$scope', '$modalInstance', '$resource',function (
 
 //新增
 app.controller('ModalInstanceCtrl', ['$scope', '$modalInstance', '$resource', function ($scope, $modalInstance, $resource) {
-    var postName = $resource($scope.url + 'address/add');
+    var postName = $resource($scope.url + '/address/add');
     $scope.ok = function () {
-        postName.save({address:$scope.newAdds}, function () {
+        postName.save({address:$scope.newAdds},function () {
             $modalInstance.close();
         })
     }
@@ -101,12 +100,11 @@ app.controller('ModalInstanceCtrl', ['$scope', '$modalInstance', '$resource', fu
 //编辑
 app.controller('compileCtrl', ['$scope', '$modalInstance', '$resource', 'items', function ($scope, $modalInstance, $resource, items) {
     $scope.add = items;
-    var bianji = $resource($scope.url + 'address/modify');
+    var bianji = $resource($scope.url + '/address/modify');
     $scope.comp = function (id) {
         bianji.save(
-            {id: $scope.item.id, address: $scope.item.address},
-            function () {
+            {id: $scope.item.id, address: $scope.item.address}, function () {
                 $modalInstance.close(items);
-            })
+            });
     };
 }]);

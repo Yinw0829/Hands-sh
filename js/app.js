@@ -2,6 +2,7 @@
 
 
 angular.module('app', [
+    // 'textAngular',
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -15,5 +16,7 @@ angular.module('app', [
     'ui.validate',
     'oc.lazyLoad',
     'ngFileUpload',
+    'ui.services',
+    'tm.pagination',
     'pascalprecht.translate'
 ]);

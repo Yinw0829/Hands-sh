@@ -1,0 +1,22 @@
+<!--邀请-->
+<div class="modal-body wrapper-lg">
+    <div class="row">
+        <div class="col-sm-12">
+            <form role="form" class="form-horizontal">
+                <div class="form-group text-center">
+                    <label class="text-left">是否邀请 <span class="text-danger">{{item.appUserModel.name}}</span>？</label>
+                </div>
+                <div class="form-group">
+                </div>
+                <div class=" m-t-lg">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-6">
+                            <button class="btn  btn-md btn-success btn-addon" ng-click="invite(item.id)">邀请</button>
+                            <button class="btn  btn-md btn-info btn-addon" ng-click="cancel()">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

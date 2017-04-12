@@ -1,7 +1,4 @@
-<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
-    app.settings.asideFolded = false;
-    app.settings.asideDock = false;
-  "  ng-controller="warehouse">
+<div class="hbox hbox-auto-xs hbox-auto-sm">
     <!-- model -->
     <div class="col">
         <!-- model header -->
@@ -16,16 +13,16 @@
             <div class="panel-body">
                 <form name="form" class="form-horizontal">
                     <div class="form-group">
-                        <label class="col-sm-1 control-label h1" ng-bind="Data.name">张三</label>
-                        <label class="control-label h3" ng-bind="Data.age">23岁</label>
-                        <label class="control-label h3" ng-bind="Data.gender">男</label>
+                        <label class="col-sm-1 control-label h1">张三</label>
+                        <label class="control-label h3">23岁</label>
+                        <label class="control-label h3">男</label>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-1 control-label" ng-bind="Date.phone"><strong>联系电话：</strong></label>
-                        <label class=" control-label" ng-bind="Date.phone">13569874563</label>
+                        <label class="col-sm-1 control-label" ><strong>联系电话：</strong></label>
+                        <label class=" control-label">13569874563</label>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-1 control-label" ng-bind="Data.mien"><strong>个人风采：</strong></label>
+                        <label class="col-sm-1 control-label" ><strong>个人风采：</strong></label>
                         <div class="row">
                             <div class="col-sm-1">
                                 <a href="#" class="thumbnail">
@@ -71,7 +68,7 @@
                         </label>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-1 control-label"><strong>入职记录：</strong></label>
+                        <label class="col-sm-1 control-label"><strong>兼职经验：</strong></label>
                         <div class="table-responsive">
                             <table class="table table-striped b-t b-light">
                                 <thead>
@@ -84,17 +81,9 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td ng-bind="Data.Post">嘉兴禾码科技</td>
-                                    <td ng-bind="Data.applicationTime">服务员</td>
-                                    <td ng-bind="Data.state">2016.11.10</td>
-                                    <td>
-                                        <button class="btn  btn-sm btn-success btn-addon">评价详细</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td ng-bind="Data.Post">南京冰狼科技</td>
-                                    <td ng-bind="Data.applicationTime">迎宾员</td>
-                                    <td ng-bind="Data.state">2015.10.10</td>
+                                    <td>嘉兴禾码科技</td>
+                                    <td>服务员</td>
+                                    <td>2016.11.10</td>
                                     <td>
                                         <button class="btn  btn-sm btn-success btn-addon">评价详细</button>
                                     </td>

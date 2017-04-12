@@ -1,30 +1,33 @@
-app.controller('SigninFormController', ['$scope', '$http', '$state', function ($scope, $http, $state) {
-    $scope.imgUrl = 'http://localhost:8087/hands/captcha?time=' + (new Date()).getTime();
-    $scope.imgclick = function () {
-        $scope.imgUrl = 'http://localhost:8087/hands/captcha?time=' + (new Date()).getTime();
+app.controller('SigninFormController', ['$scope', '$modal', '$http', '$state', '$resource', 'api', 'Storage', function ($scope, $modal, $http, $state, $resource, api, Storage) {
+    var url = api.url;
+    var getup = $resource(
+        url,
+        {},
+        {
+            enter: {url: url + '/login', method: 'POST', isArray: false}
+        }
+    );
+    $scope.login = function () {
+        var data = {
+            userName: $scope.userName,
+            password: $scope.password
+            // captcha: $scope.captcha
+        };
+        getup.enter(data, function (reg) {
+            if (reg.success) {
+                $state.go('app.job_normal');
+                Storage.set('user', reg.result)
+            } else {
+                $scope.authError = reg.msg;
+            }
+        });
     };
-    //
-    // $scope.authError = null;
-    // $scope.login = function () {
-    //     $scope.authError = null;
-    //     $http({
-    //         method: 'POST',
-    //         url: 'http://localhost:8087/hands/enterprise/login',
-    //         headers: {'Content-Type': 'application/json'},
-    //         data: {
-    //             userName: $scope.userName,
-    //             password: $scope.password,
-    //             captcha: $scope.captcha
-    //         }
-    //     })
-    //         .then(function (res) {
-    //             var data = res.data;
-    //             if (data.success) {
-    //                 $state.go('app.job_normal');
-    //             }
-    //                 else {
-    //                 $scope.authError = data.msg;
-    //             }
-    //         });
-    // };
+    //监听三个$scope值的变化，如果发生变化就清空$scope.authError的值。
+    $scope.$watch('userName+password+captcha', function (newValue, oldValue) {
+        $scope.authError = ''
+    });
+    $scope.imgUrl = url + 'captcha?time=' + (new Date()).getTime();
+    $scope.imgclick = function () {
+        $scope.imgUrl = url + 'captcha?time=' + (new Date()).getTime();
+    };
 }]);

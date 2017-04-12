@@ -16,7 +16,8 @@ var app = angular.module('app')
         $provide.provider('httpServe',function () {
             this.$get = function () {
                 return{
-                    httpUrl:'http://localhost:8087/hands/'
+                    // httpUrl:'api'
+                    httpUrl:'hands'
                 }
             }
         })

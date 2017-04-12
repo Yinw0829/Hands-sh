@@ -1,58 +1,51 @@
-    <div class="col" ng-controller="audition">
-        <!-- model header -->
-        <div class="bg-light lter b-b wrapper-md">
-            <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                    <h1 class="m-n font-thin h3 text-black">面试地址管理</h1>
-                </div>
+<div class="col" ng-controller="audition">
+    <!-- model header -->
+    <div class="bg-light lter b-b wrapper-md">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <h1 class="m-n font-thin h3 text-black">面试地址管理</h1>
             </div>
-        </div>
-        <!-- / model header -->
-        <div class="wrapper-md">
-            <div class="panel-heading panel-default">
-                <div class="row">
-                    <div class="col-sm-6 text-right col-sm-offset-6">
-            <span>
-                    <button class="btn btn-success" ng-click="newAdd()">添加地址</button>
-              </span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrapper-md">
-                <div class="panel panel-default">
-                    <div class="table-responsive">
-                        <table class="table m-b-none" ui-jq="footable" data-filter="#filter" data-page-size="15">
-                            <thead>
-                            <tr>
-                                <th>详细地址</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr ng-repeat="y in yaddRess">
-                                <td ng-bind="y.address"></td>
-                                <td>
-                                    <button class="btn  btn-sm btn-success btn-addon" ng-click="see(y.id)"><i class="fa fa-edit"></i>修改
-                                    </button>
-                                    <button class="btn  btn-sm btn-danger btn-addon" ng-click="del(y)"><i class="glyphicon glyphicon-remove"></i>删除
-                                    </button>
-
-                                </td>
-                            </tr>
-                            </tbody>
-                            <tfoot class="hide-if-no-paging">
-                            <tr>
-                                <td colspan="10" class="text-center">
-                                    <ul class="pagination"></ul>
-                                </td>
-                            </tr>
-                            </tfoot>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
+    <!-- / model header -->
+    <div class="row wrapper-sm">
+        <div class="col-sm-6 text-right col-sm-offset-5">
+            <button class="btn btn-success" ng-click="newAdd()">添加地址</button>
+        </div>
+    </div>
+    <div class="wrapper-md">
+        <div class="panel panel-default">
+            <div class="table-responsive">
+                <table class="table m-b-none" ui-jq="footable" data-filter="#filter" data-page-size="15">
+                    <thead>
+                    <tr>
+                        <th>详细地址</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="y in yaddRess">
+                        <td ng-bind="y.address"></td>
+                        <td>
+                            <button class="btn  btn-sm btn-success btn-addon" ng-click="see(y.id)"><i
+                                    class="fa fa-edit"></i>修改
+                            </button>
+                            <button class="btn  btn-sm btn-danger btn-addon" ng-click="del(y)"><i
+                                    class="glyphicon glyphicon-remove"></i>删除
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <tfoot class="hide-if-no-paging">
+                    <tr>
+                        <td colspan="10" class="text-center">
+                            <ul class="pagination"></ul>
+                        </td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
 </div>

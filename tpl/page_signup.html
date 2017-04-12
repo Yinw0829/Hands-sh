@@ -5,7 +5,7 @@
         </div>
         <div class="panel-body">
             <form name="myForm" class="form-horizontal">
-                <div class="form-group "
+                <div class="form-group"
                      ng-class="{'has-error':myForm.name.$dirty && myForm.name.$invalid}">
                     <label class="col-sm-2 control-label text-right">公司名称</label>
                     <div class="col-sm-10">
@@ -18,6 +18,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="form-group "
                      ng-class="{'has-error':myForm.account.$dirty && myForm.account.$invalid}">
                     <label class="col-sm-2 control-label text-right">登录账号</label>
@@ -56,13 +57,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group ">
+                <div class="form-group "  ng-class="{'has-error':myForm.file.$dirty && myForm.file.$invalid}">
                     <label class="col-sm-2 control-label text-right" ng-src="{{uploadImg}}">营业执照</label>
                     <div class="col-sm-10">
                         <input type="file" ngf-select ng-model="file" name="file" ngf-pattern="'.jpg,.png'" ngf-max-size="5MB" value="上传营业执照">
                     </div>
                 </div>
-                <div class="form-group ">
+                <div class="form-group "  ng-class="{'has-error':myForm.creditCode.$dirty && myForm.creditCode.$invalid}">
                     <label class="col-sm-2 control-label text-right">营业执照号</label>
                     <div class="col-sm-10">
                         <input type="text" autocomplete="off" name="creditCode "
@@ -71,66 +72,80 @@
                                class="form-control" placeholder="请输入公司信用代码">
                         <div ng-show="myForm.creditCode.$dirty && myForm.creditCode.$error.minlength"
                              class="alert alert-danger help-block">
-                            信用代码长度不能小于15位
+                            营业执照号长度不能小于15位
                         </div>
                         <div ng-show="myForm.creditCode.$dirty && myForm.creditCode.$error.maxlength"
                              class="alert alert-danger help-block">
-                            信用代码长度不能大于18位
+                            营业执照号长度不能大于18位
                         </div>
                     </div>
                 </div>
-                <div class="form-group ">
-                    <label class="col-sm-2 control-label text-right">联系人</label>
+                <div class="form-group">
+                    <label class="col-sm-2 control-label text-right">所属行业</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" name="contractPerson"
-                               placeholder="请输入联系人" ng-model="contractPerson">
+                        <select class="form-control w-sm inline " ng-model="industryId" name="industryId"
+                                ng-options="y.id as y.name for y in industryList">
+                        </select>
                     </div>
                 </div>
-                <!--<div class="form-group ">-->
-                    <!--<label class="col-sm-2 control-label text-right">验证码</label>-->
-                    <!--<div class="col-sm-10">-->
-                        <!--<input type="tel" name="number" autocomplete="off" maxlength="7"-->
-                               <!--ng-required="true" ng-model="captcha" class="form-control"-->
-                               <!--placeholder="请输入图片验证码">-->
-                        <!--<img ng-click="imgclick()" ng-src="{{imgUrl}}">-->
-                    <!--</div>-->
-                <!--</div>-->
-                <div class="form-group ">
+                <div class="form-group" ng-class="{'has-error':myForm.personName.$dirty && myForm.personName.$invalid}">
+                    <label class="col-sm-2 control-label text-right">联系人</label>
+                    <div class="col-sm-10">
+                        <input type="text" name="personName" ng-required="true"
+                               ng-model="contactPerson"
+                               class="form-control" placeholder="请输入联系人">
+                        <div ng-show="myForm.personName.$dirty && myForm.personName.$error.minlength ||  myForm.personName.$error.maxlength "
+                             class="alert alert-danger help-block">
+                            请输入联系人
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group "  ng-class="{'has-error':myForm.number.$dirty && myForm.number.$invalid}">
+                    <label class="col-sm-2 control-label text-right">验证码</label>
+                    <div class="col-sm-10">
+                        <input type="tel" name="number" autocomplete="off" maxlength="7"
+                               ng-required="true" ng-model="captcha" class="form-control"
+                               placeholder="请输入图片验证码">
+                        <img ng-click="imgclick()" ng-src="{{imgUrl}}">
+                    </div>
+                </div>
+                <div class="form-group " ng-class="{'has-error':myForm.cellPhone.$dirty && myForm.cellPhone.$invalid}">
                     <label class="col-sm-2 control-label text-right">联系电话</label>
                     <div class="col-sm-10">
                         <div class="input-group">
-                            <input type="tel" name="cellPhone" autocomplete="off"
-                                   ng-pattern="/^1[3|7][0-9]\d{4,8}$/" ng-minlength="11" ng-maxlength="11"
+                            <input type="tel" name="cellPhone" autocomplete="off" ng-required="true"
+                                   ng-pattern="/^1[3|4|5|7|8][0-9]{9}$/" ng-minlength="11" ng-maxlength="11"
                                    ng-model="cellPhone" class="form-control" placeholder="请输入11位手机号">
-                            <div class="alert alert-danger help-block" ng-show="myForm.cellPhone.$error.maxlength">
-                                手机号不能小于11位
-                            </div>
-                            <div class="alert alert-danger help-block" ng-show="myForm.cellPhone.$error.minlength">
-                                手机号不能小于11位
-                            </div>
-                            <div class="alert alert-danger help-block" ng-show="myForm.cellPhone.$error.pattern">
-                                手机号格式不正确
-                            </div>
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button" ng-click="minute()"
                                         ng-disabled="isDisable">{{send}}</button>
                                   </span>
                         </div>
+                        <div class="alert alert-danger help-block" ng-show="myForm.cellPhone.$error.maxlength">
+                            手机号不能小于11位
+                        </div>
+                        <div class="alert alert-danger help-block" ng-show="myForm.cellPhone.$error.minlength">
+                            手机号不能小于11位
+                        </div>
+                        <div class="alert alert-danger help-block" ng-show="myForm.cellPhone.$error.pattern">
+                            手机号格式不正确
+                        </div>
                     </div>
                 </div>
-                <!--<div class="form-group ">-->
-                    <!--<label class="col-sm-2 control-label text-right">手机验证码</label>-->
-                    <!--<div class="col-sm-10">-->
-                        <!--<input type="tel" name="smsCode" autocomplete="off" maxlength="6"-->
-                               <!--ng-required="true" ng-model="smsCode" class="form-control"-->
-                               <!--placeholder="请输入手机验证码" show-time="false">-->
-                        <!--<div class="alert alert-danger help-block" ng-show="myForm.smsCode.$error.pattern">-->
-                            <!--验证码只能为数字-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <div class="form-group">
-                    <label class="col-sm-2 control-label text-right">注册地址</label>
+                <div class="form-group "  ng-class="{'has-error':myForm.smsCode.$dirty && myForm.smsCode.$invalid}">
+                    <label class="col-sm-2 control-label text-right">手机验证码</label>
+                    <div class="col-sm-10">
+                        <input type="tel" name="smsCode" autocomplete="off" maxlength="6"
+                               ng-required="true" ng-model="smsCode" class="form-control"
+                               placeholder="请输入手机验证码" show-time="false">
+                        <div class="alert alert-danger help-block" ng-show="myForm.smsCode.$error.pattern">
+                            验证码只能为数字
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group"  ng-class="{'has-error':myForm.code.$dirty && myForm.code.$invalid}">
+                    <label class="col-sm-2 control-label text-right">公司所在地</label>
                     <div class="col-sm-4">
                         <select class="form-control input-md w-lg inline m-r" ng-model="province"
                                 ng-options="x.code as x.name for x in cities |cityFilter:null"></select>

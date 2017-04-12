@@ -2,41 +2,79 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/js/controllers" mnemonic="2" />
-    <bookmark url="file://$PROJECT_DIR$/js/controllers/release.js" line="22" />
+    <bookmark url="file://$PROJECT_DIR$/js/controllers/release.js" line="24" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ecabaac-cccc-4c45-a8e2-b6b2b3b5d8ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/job-normal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/map1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/audition/audition.compile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/audition/audition.delete.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/audition/audition.form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/normal.detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/normal.past.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/release.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tpl/map.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tpl/model/modal.form.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/textAngular.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular-locale_zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/password.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/talents.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/controllers/warehouse-1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/services/services.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/textAngular/textAngular-rangy.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/textAngular/textAngular-sanitize.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/textAngular/textAngular.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/textAngular/textAngular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/tm.pagination.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/bring/bring.abolish.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/bring/bring.assess.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/bring/bring.delect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/bring/bring.evaluate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/bring/bring.invite.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/bring/bring.refuse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/minute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/model/prompt.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpl/password.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/win.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/新增控制器" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/doc/路由相关页面" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tpl/model/modal1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/1111.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/app.css" afterPath="$PROJECT_DIR$/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/config.js" afterPath="$PROJECT_DIR$/js/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/config.lazyload.js" afterPath="$PROJECT_DIR$/js/config.lazyload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/config.router.js" afterPath="$PROJECT_DIR$/js/config.router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/audition.js" afterPath="$PROJECT_DIR$/js/controllers/audition.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/bootstrap.js" afterPath="$PROJECT_DIR$/js/controllers/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/job-normal.js" afterPath="$PROJECT_DIR$/js/controllers/job-normal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/page_singup.js" afterPath="$PROJECT_DIR$/js/controllers/page_singup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/release.js" afterPath="$PROJECT_DIR$/js/controllers/release.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/signin.js" afterPath="$PROJECT_DIR$/js/controllers/signin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/warehouse.js" afterPath="$PROJECT_DIR$/js/controllers/warehouse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/app.html" afterPath="$PROJECT_DIR$/tpl/app.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/audition.html" afterPath="$PROJECT_DIR$/tpl/audition.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/blocks/page_signup.html" afterPath="$PROJECT_DIR$/tpl/blocks/page_signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/blocks/header.html" afterPath="$PROJECT_DIR$/tpl/blocks/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/blocks/nav.html" afterPath="$PROJECT_DIR$/tpl/blocks/nav.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/job_normal.html" afterPath="$PROJECT_DIR$/tpl/job_normal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/job_past.html" afterPath="$PROJECT_DIR$/tpl/job_past.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/map1.html" afterPath="$PROJECT_DIR$/tpl/map1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/minute.html" afterPath="$PROJECT_DIR$/tpl/minute.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/model/amend.html" afterPath="$PROJECT_DIR$/tpl/model/amend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/model/member.html" afterPath="$PROJECT_DIR$/tpl/model/member.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/model/normal.detail.html" afterPath="$PROJECT_DIR$/tpl/model/normal.detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/model/normal.past.html" afterPath="$PROJECT_DIR$/tpl/model/normal.past.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/model/release.html" afterPath="$PROJECT_DIR$/tpl/model/release.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/page_signin.html" afterPath="$PROJECT_DIR$/tpl/page_signin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/page_signup.html" afterPath="$PROJECT_DIR$/tpl/page_signup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/release.html" afterPath="$PROJECT_DIR$/tpl/release.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/vendor/jquery/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/controllers/chart.js" afterPath="$PROJECT_DIR$/js/controllers/uploads/chart.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/controllers/signup.js" afterPath="$PROJECT_DIR$/js/controllers/uploads/signup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/resume.html" afterPath="$PROJECT_DIR$/tpl/resume.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/shiditu.html" afterPath="$PROJECT_DIR$/tpl/shiditu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/talents.html" afterPath="$PROJECT_DIR$/tpl/talents.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tpl/warehouse.html" afterPath="$PROJECT_DIR$/tpl/warehouse.html" />
     </list>
     <ignored path="mstp_111_angulr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,77 +97,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="audition.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/audition.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+            <state relative-caret-position="51">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="job-normal.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/controllers/job-normal.js">
+      <file leaf-file-name="signin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controllers/signin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            <state relative-caret-position="204">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="normal.detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/model/normal.detail.html">
+      <file leaf-file-name="page_signin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tpl/page_signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="job_normal.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/job_normal.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="41" column="86" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="audition.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controllers/audition.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+            <state relative-caret-position="442">
+              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
               <folding>
-                <element signature="e#439#980#0" expanded="false" />
-                <element signature="e#1757#2321#0" expanded="false" />
-                <element signature="e#2447#2712#0" expanded="false" />
-                <element signature="e#2846#3052#0" expanded="false" />
+                <element signature="e#2346#2352#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="release.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controllers/release.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="audition.compile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/model/audition/audition.compile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="88" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="88" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -151,57 +146,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/buzhishisha.html" />
-        <option value="$PROJECT_DIR$/js/app/index.js" />
-        <option value="$PROJECT_DIR$/tpl/particular.html" />
-        <option value="$PROJECT_DIR$/tpl/model/member.html" />
-        <option value="$PROJECT_DIR$/tpl/blocks/header.html" />
-        <option value="$PROJECT_DIR$/js/controllers/warehouse.js" />
-        <option value="$PROJECT_DIR$/tpl/model/amend.html" />
-        <option value="$PROJECT_DIR$/tpl/warehouse.html" />
-        <option value="$PROJECT_DIR$/tpl/minute.html" />
-        <option value="$PROJECT_DIR$/tpl/blocks/password.html" />
-        <option value="$PROJECT_DIR$/js/YW/hands.js" />
-        <option value="$PROJECT_DIR$/js/config.lazyload.js" />
-        <option value="$PROJECT_DIR$/tpl/demo.html" />
-        <option value="$PROJECT_DIR$/js/controllers/hands.js" />
-        <option value="$PROJECT_DIR$/js/controllers/signup.js" />
-        <option value="$PROJECT_DIR$/js/YW/page_singup.js" />
-        <option value="$PROJECT_DIR$/js/YW/signin.js" />
-        <option value="$PROJECT_DIR$/js/controllers/message.js" />
+        <option value="$PROJECT_DIR$/css/font-awesome.css" />
+        <option value="$PROJECT_DIR$/tpl/model/release.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/bak/grunt/copy.js" />
-        <option value="$PROJECT_DIR$/tpl/shiditu.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/tm.pagination.js" />
+        <option value="$PROJECT_DIR$/tpl/job_past.html" />
+        <option value="$PROJECT_DIR$/css/app.css" />
+        <option value="$PROJECT_DIR$/tpl/model/amend.html" />
+        <option value="$PROJECT_DIR$/tpl/password.html" />
+        <option value="$PROJECT_DIR$/tpl/job_normal.html" />
+        <option value="$PROJECT_DIR$/tpl/release.html" />
+        <option value="$PROJECT_DIR$/tpl/model/audition/audition.form.html" />
+        <option value="$PROJECT_DIR$/tpl/model/bring/bring.invite.html" />
+        <option value="$PROJECT_DIR$/tpl/model/bring/bring.refuse.html" />
+        <option value="$PROJECT_DIR$/tpl/model/bring/bring.abolish.html" />
+        <option value="$PROJECT_DIR$/tpl/model/normal.detail.html" />
+        <option value="$PROJECT_DIR$/js/controllers/talens.js" />
+        <option value="$PROJECT_DIR$/tpl/minute.html" />
+        <option value="$PROJECT_DIR$/tpl/warehouse.html" />
+        <option value="$PROJECT_DIR$/js/config.router.js" />
+        <option value="$PROJECT_DIR$/tpl/model/bring/bring.delect.html" />
+        <option value="$PROJECT_DIR$/tpl/model/bring/bring.evaluate.html" />
+        <option value="$PROJECT_DIR$/js/services/services.js" />
+        <option value="$PROJECT_DIR$/tpl/page_signup.html" />
+        <option value="$PROJECT_DIR$/tpl/model/bring/bring.assess.html" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/tpl/model/minute.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/tpl/model/member.html" />
+        <option value="$PROJECT_DIR$/doc/js/controllers/signin.js" />
+        <option value="$PROJECT_DIR$/js/config.js" />
+        <option value="$PROJECT_DIR$/js/config.lazyload.js" />
+        <option value="$PROJECT_DIR$/js/controllers/audition.js" />
+        <option value="$PROJECT_DIR$/js/controllers/job-normal.js" />
+        <option value="$PROJECT_DIR$/js/controllers/page_singup.js" />
+        <option value="$PROJECT_DIR$/js/controllers/release.js" />
+        <option value="$PROJECT_DIR$/js/controllers/talents.js" />
+        <option value="$PROJECT_DIR$/js/controllers/warehouse-1.js" />
+        <option value="$PROJECT_DIR$/js/controllers/warehouse.js" />
+        <option value="$PROJECT_DIR$/js/controllers/password.js" />
+        <option value="$PROJECT_DIR$/tpl/blocks/header.html" />
         <option value="$PROJECT_DIR$/tpl/blocks/nav.html" />
-        <option value="$PROJECT_DIR$/tpl/blocks/page_signup.html" />
+        <option value="$PROJECT_DIR$/tpl/app.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/tpl/talents.html" />
+        <option value="$PROJECT_DIR$/error404.html" />
+        <option value="$PROJECT_DIR$/lose.html" />
+        <option value="$PROJECT_DIR$/win.html" />
+        <option value="$PROJECT_DIR$/tpl/map1.html" />
         <option value="$PROJECT_DIR$/js/controllers/signin.js" />
         <option value="$PROJECT_DIR$/tpl/page_signin.html" />
-        <option value="$PROJECT_DIR$/tpl/modal.form.html" />
-        <option value="$PROJECT_DIR$/tpl/model/modal.form.html" />
-        <option value="$PROJECT_DIR$/tpl/model/audition/audition.compile.html" />
-        <option value="$PROJECT_DIR$/tpl/model/audition/audition.delete.html" />
-        <option value="$PROJECT_DIR$/js/config.js" />
-        <option value="$PROJECT_DIR$/css/PostJob.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/controllers/page_singup.js" />
-        <option value="$PROJECT_DIR$/tpl/model/release/release.issue.html" />
-        <option value="$PROJECT_DIR$/js/controllers/1111.js" />
-        <option value="$PROJECT_DIR$/tpl/11111.html" />
-        <option value="$PROJECT_DIR$/tpl/model/release.html" />
-        <option value="$PROJECT_DIR$/tpl/map.html" />
-        <option value="$PROJECT_DIR$/tpl/release.html" />
-        <option value="$PROJECT_DIR$/tpl/map1.html" />
-        <option value="$PROJECT_DIR$/js/config.router.js" />
-        <option value="$PROJECT_DIR$/tpl/page_signup.html" />
-        <option value="$PROJECT_DIR$/tpl/job_normal.html" />
-        <option value="$PROJECT_DIR$/tpl/job_past.html" />
-        <option value="$PROJECT_DIR$/tpl/model/normal.detail.html" />
-        <option value="$PROJECT_DIR$/tpl/model/normal.past.html" />
-        <option value="$PROJECT_DIR$/js/controllers/job-normal.js" />
-        <option value="$PROJECT_DIR$/js/controllers/audition.js" />
-        <option value="$PROJECT_DIR$/tpl/audition.html" />
-        <option value="$PROJECT_DIR$/js/controllers/release.js" />
       </list>
     </option>
   </component>
@@ -212,8 +207,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1916" />
-    <option name="y" value="157" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -242,63 +237,33 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -308,11 +273,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -326,11 +291,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -338,21 +303,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="audition" />
+              <option name="myItemId" value="blocks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -362,11 +323,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Hands-sh" />
+              <option name="myItemId" value="enterprise" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -380,8 +341,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -397,18 +356,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Hands-sh\tpl\model" />
+      <recent name="E:\Projects\hands\enterprise" />
+      <recent name="E:\Projects\hands\enterprise\js\controllers" />
+      <recent name="E:\Hands-sh\tpl\model\bring" />
       <recent name="E:\Hands-sh\js\controllers" />
-      <recent name="E:\Hands-sh\tpl" />
-      <recent name="E:\Hands-sh\tpl\model\release" />
-      <recent name="E:\Hands-sh\tpl\model\audition" />
+      <recent name="E:\Hands-sh\tpl\model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\hands\enterprise\js" />
+      <recent name="E:\Projects\hands\enterprise\js\app" />
       <recent name="E:\Hands-sh\tpl" />
       <recent name="E:\Hands-sh\tpl\model" />
       <recent name="E:\Hands-sh\js\controllers\uploads" />
-      <recent name="E:\Hands-sh\js" />
-      <recent name="E:\Hands-sh\tpl\model\audition" />
     </key>
   </component>
   <component name="RunManager">
@@ -519,32 +478,85 @@
       <workItem from="1482473793451" duration="12754000" />
       <workItem from="1482538969465" duration="22321000" />
       <workItem from="1482639523915" duration="5693000" />
+      <workItem from="1482713556668" duration="6731000" />
+      <workItem from="1482800235603" duration="14646000" />
+      <workItem from="1482841011796" duration="665000" />
+      <workItem from="1482888752555" duration="18521000" />
+      <workItem from="1482974921660" duration="14647000" />
+      <workItem from="1483060435767" duration="6245000" />
+      <workItem from="1483066700169" duration="4760000" />
+      <workItem from="1483317144305" duration="5666000" />
+      <workItem from="1483334213646" duration="7099000" />
+      <workItem from="1483341586775" duration="1198000" />
+      <workItem from="1483420873177" duration="2363000" />
+      <workItem from="1483491186093" duration="1314000" />
+      <workItem from="1483519276570" duration="599000" />
+      <workItem from="1483579062227" duration="11083000" />
+      <workItem from="1483665907316" duration="28205000" />
+      <workItem from="1483751763609" duration="17078000" />
+      <workItem from="1483840181829" duration="9155000" />
+      <workItem from="1483930687893" duration="633000" />
+      <workItem from="1484018313698" duration="11969000" />
+      <workItem from="1484036481104" duration="3536000" />
+      <workItem from="1484051226206" duration="62000" />
+      <workItem from="1484109444319" duration="1269000" />
+      <workItem from="1484182974153" duration="599000" />
+      <workItem from="1484528674709" duration="1489000" />
+      <workItem from="1484701025003" duration="1307000" />
+      <workItem from="1487579027299" duration="7486000" />
+      <workItem from="1487654508415" duration="22313000" />
+      <workItem from="1487725371709" duration="13881000" />
+      <workItem from="1487811136485" duration="23029000" />
+      <workItem from="1487841600239" duration="3358000" />
+      <workItem from="1487898676011" duration="3476000" />
+      <workItem from="1488159804669" duration="23122000" />
+      <workItem from="1488260263281" duration="11097000" />
+      <workItem from="1488332080381" duration="14017000" />
+      <workItem from="1488415964017" duration="10796000" />
+      <workItem from="1488675673378" duration="7410000" />
+      <workItem from="1488761864598" duration="17452000" />
+      <workItem from="1488849017847" duration="13671000" />
+      <workItem from="1489116845476" duration="1510000" />
+      <workItem from="1489197211385" duration="753000" />
+      <workItem from="1489463691944" duration="639000" />
+      <workItem from="1489539867939" duration="1071000" />
+      <workItem from="1489559973482" duration="4438000" />
+      <workItem from="1489568796794" duration="1759000" />
+      <workItem from="1489626908872" duration="9535000" />
+      <workItem from="1489721163900" duration="5859000" />
+      <workItem from="1489971945075" duration="6131000" />
+      <workItem from="1490004105514" duration="711000" />
+      <workItem from="1490057712286" duration="3418000" />
+      <workItem from="1490586085856" duration="1981000" />
+      <workItem from="1490664736497" duration="740000" />
+      <workItem from="1491989517605" duration="75000" />
+      <workItem from="1491989665272" duration="456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="407882000" />
+    <option name="totallyTimeSpent" value="788905000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1916" y="157" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1369863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15068494" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -560,169 +572,55 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/js/controllers/warehouse.js</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="52" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/blocks/page_signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/page_signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/amend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/audition/audition.form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/config.lazyload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/animate.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/font-awesome.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="116375">
+          <caret line="6125" column="8" selection-start-line="6125" selection-start-column="8" selection-end-line="6125" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/model/minute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="93" selection-start-line="57" selection-start-column="93" selection-end-line="57" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/warehouse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="148" column="105" selection-start-line="148" selection-start-column="105" selection-end-line="148" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/page_signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="101" column="22" selection-start-line="101" selection-start-column="22" selection-end-line="101" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="209">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/post_set.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/angular/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="2178" column="12" selection-start-line="2178" selection-start-column="12" selection-end-line="2178" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/modal1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/member.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/1111.js" />
-    <entry file="file://$PROJECT_DIR$/tpl/11111.html" />
-    <entry file="file://$PROJECT_DIR$/tpl/resume.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/release.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/file-upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/imgcrop.js">
+    <entry file="file://$PROJECT_DIR$/doc/js/controllers/signin.js" />
+    <entry file="file://$PROJECT_DIR$/js/controllers/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -731,200 +629,311 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1311">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/uploads/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/uploads/chart.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/vectormap.js">
+    <entry file="file://$PROJECT_DIR$/js/config.lazyload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/audition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/job-normal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/release.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding>
+            <element signature="e#1804#1843#0" expanded="false" />
+            <element signature="e#1913#1959#0" expanded="false" />
+            <element signature="e#2448#2601#0" expanded="false" />
+            <element signature="e#2672#2750#0" expanded="false" />
+            <element signature="e#2813#2905#0" expanded="false" />
+            <element signature="e#3074#3159#0" expanded="false" />
+            <element signature="e#3430#3556#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/talents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="11367" column="35" selection-start-line="11367" selection-start-column="35" selection-end-line="11367" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/angular/angular-ui-utils/ui-utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="1457" column="39" selection-start-line="1457" selection-start-column="39" selection-end-line="1457" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/password.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/warehouse.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        <state relative-caret-position="480">
+          <caret line="126" column="19" selection-start-line="126" selection-start-column="19" selection-end-line="126" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/aside.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/page_footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lose.html" />
+    <entry file="file://$PROJECT_DIR$/tpl/model/member.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/model/normal.detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/talents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="32" column="128" selection-start-line="32" selection-start-column="128" selection-end-line="32" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/page_signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/warehouse-1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="429" column="0" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="80" column="47" selection-start-line="80" selection-start-column="11" selection-end-line="80" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/blocks/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="25" column="66" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controllers/page_singup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="82" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/config.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/audition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/model/release.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/job_past.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/model/prompt.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/win.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/job_normal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/release.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hands-sh/js/controllers/release.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/minute.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/map1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hands-sh/tpl/blocks/page_signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/controllers/signin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        <state relative-caret-position="204">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/config.js">
+    <entry file="file://$PROJECT_DIR$/tpl/page_signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/blocks/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/map222.html" />
-    <entry file="file://$PROJECT_DIR$/js/config.router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/page_signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="116" column="41" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/page_singup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/warehouse.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="75" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/particular.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/job_past.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/release.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/map1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/audition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        <state relative-caret-position="442">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding>
-            <element signature="e#439#980#0" expanded="false" />
-            <element signature="e#1757#2321#0" expanded="false" />
-            <element signature="e#2447#2712#0" expanded="false" />
-            <element signature="e#2846#3052#0" expanded="false" />
+            <element signature="e#2346#2352#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/release.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/audition/audition.compile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="88" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/audition.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/job_normal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="41" column="86" selection-start-line="41" selection-start-column="86" selection-end-line="41" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/audition/audition.delete.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/normal.past.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="77" column="44" selection-start-line="77" selection-start-column="44" selection-end-line="77" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/model/normal.detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/angular/angular-bootstrap/ui-bootstrap-tpls.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="2130" column="14" selection-start-line="2130" selection-start-column="14" selection-end-line="2130" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controllers/job-normal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>

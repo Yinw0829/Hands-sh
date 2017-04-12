@@ -44,6 +44,7 @@ label {
   font-weight: normal;
 }
 
+
 small,
 .small {
   font-size: 13px;
@@ -5099,4 +5100,16 @@ a.text-#000000:hover {
   99.9% {
     background-color: #7266ba;
   }
+}
+
+button[ng-click^="select('today')"],
+button[ng-click^="select(null)"]
+{
+  display: none;
+}
+
+.paginationGid .pagination{
+  display: inline;
+  width: 40px;
+  /*margin-left: -50px;*/
 }

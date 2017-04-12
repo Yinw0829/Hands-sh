@@ -1,7 +1,4 @@
-<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="
-    app.settings.asideFolded = false;
-    app.settings.asideDock = false;
-  " ng-controller="warehouse">
+<div class="hbox hbox-auto-xs hbox-auto-sm" ng-init="" ng-controller="warehouse1">
     <!-- model -->
     <div class="col">
         <!-- model header -->
@@ -17,7 +14,7 @@
             <tabset class="tab-container">
                 <tab>
                     <tab-heading>
-                        面试状态
+                        申请状态
                     </tab-heading>
                     <div class="wrapper-md">
                         <div class="panel panel-default">
@@ -35,48 +32,35 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>欧尚发健身培训宣传单</td>
-                                        <td>促销员</td>
-                                        <td>张三</td>
-                                        <td>13526987456</td>
-                                        <td>待邀请</td>
+                                    <tr ng-repeat="y in interList">
+                                        <td ng-bind="$index+1"></td>
+                                        <td ng-bind="y.recruitModel.title"></td>
+                                        <td ng-bind="y.recruitModel.positionModel.name"></td>
+                                        <td ng-bind="y.appUserModel.name"></td>
+                                        <td ng-bind="y.appUserModel.userModel.cellPhone"></td>
+                                        <td ng-bind="y.statusName"></td>
                                         <td>
-                                            <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-cursor"></i>邀请面试</button>
-                                            <button class="btn  btn-sm btn-danger btn-addon"><i class="fa fa-unlock-alt"></i>拒绝面试</button>
-                                            <button class="btn  btn-sm btn-info btn-addon"  ui-sref="app.auditdemo({itemID:item.id})"><i class="icon icon-grid"></i>详细</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>欧尚发健身培训宣传单</td>
-                                        <td>促销员</td>
-                                        <td>张三</td>
-                                        <td>13526987456</td>
-                                        <td>待邀请</td>
-                                        <td>
-                                            <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-cursor"></i>邀请面试</button>
-                                            <button class="btn  btn-sm btn-danger btn-addon"><i class="fa fa-unlock-alt"></i>拒绝面试</button>
-                                            <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute"><i class="icon icon-grid"></i>详细</button>
+                                            <button class="btn  btn-sm btn-success btn-addon" ng-click="invite(y)"><i class="icon icon-cursor"></i>邀请面试</button>
+                                            <button class="btn  btn-sm btn-danger btn-addon" ng-click="refuse(y)"><i class="fa fa-unlock-alt"></i>拒绝面试</button>
+                                            <button class="btn  btn-sm btn-info btn-addon"  ng-click="minute(y.userId,y.recruitId)"><i class="icon icon-grid"></i>详细</button>
                                         </td>
                                     </tr>
                                     </tbody>
-                                    <tfoot class="hide-if-no-paging">
-                                    <tr>
-                                        <td colspan="10" class="text-center">
-                                            <ul class="pagination"></ul>
-                                        </td>
-                                    </tr>
-                                    </tfoot>
                                 </table>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row ">
+                                <div class="col-sm-12">
+                                    <tm-pagination conf="paginationConf" class="paginationGid"></tm-pagination>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </tab>
                 <tab>
                 <tab-heading>
-                    入职状态
+                    面试状态
                 </tab-heading>
                 <div class="wrapper-md">
                     <div class="panel panel-default">
@@ -94,48 +78,36 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>欧尚发健身培训宣传单</td>
-                                    <td>促销员</td>
-                                    <td>张三</td>
-                                    <td>13526987456</td>
-                                    <td>待入职</td>
+                                <tr ng-repeat="x in auditionList">
+                                    <td ng-bind="$index+1"></td>
+                                    <td ng-bind="x.recruitModel.title"></td>
+                                    <td ng-bind="x.recruitModel.positionModel.name"></td>
+                                    <td ng-bind="x.appUserModel.name"></td>
+                                    <td ng-bind="x.appUserModel.userModel.cellPhone"></td>
+                                    <td ng-bind="x.statusName"></td>
                                     <td>
-                                        <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-cursor"></i>邀请入职</button>
-                                        <button class="btn  btn-sm btn-danger btn-addon"><i class="fa fa-unlock-alt"></i>拒绝入职</button>
-                                        <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute"><i class="icon icon-grid"></i>详细</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>欧尚发健身培训宣传单</td>
-                                    <td>促销员</td>
-                                    <td>张三</td>
-                                    <td>13526987456</td>
-                                    <td>待入职</td>
-                                    <td>
-                                        <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-cursor"></i>邀请入职</button>
-                                        <button class="btn  btn-sm btn-danger btn-addon"><i class="fa fa-unlock-alt"></i>拒绝入职</button>
-                                        <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute"><i class="icon icon-grid"></i>详细</button>
+                                        <button class="btn  btn-sm btn-danger btn-addon" ng-click="abolishDel(x)"><i class="icon icon-action-undo"></i>取消邀请</button>
+                                        <button class="btn  btn-sm btn-success btn-addon" ng-click="entry(x)"><i class="icon icon-cursor"></i>邀请入职</button>
+                                        <button class="btn  btn-sm btn-danger btn-addon" ng-click="decline(x)"><i class="fa fa-unlock-alt"></i>拒绝入职</button>
+                                        <button class="btn  btn-sm btn-info btn-addon" ng-click="minute(x.userId,x.recruitId)"><i class="icon icon-grid"></i>详细</button>
                                     </td>
                                 </tr>
                                 </tbody>
-                                <tfoot class="hide-if-no-paging">
-                                <tr>
-                                    <td colspan="10" class="text-center">
-                                        <ul class="pagination"></ul>
-                                    </td>
-                                </tr>
-                                </tfoot>
                             </table>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row ">
+                            <div class="col-sm-12">
+                                <tm-pagination conf="disabledConf" class="paginationGid"></tm-pagination>
+                            </div>
                         </div>
                     </div>
                 </div>
             </tab>
                 <tab>
                     <tab-heading>
-                        评价状态
+                        入职状态
                     </tab-heading>
                     <div class="wrapper-md">
                         <div class="panel panel-default">
@@ -153,39 +125,39 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>欧尚发健身培训宣传单</td>
-                                        <td>促销员</td>
-                                        <td>张三</td>
-                                        <td>13526987456</td>
-                                        <td>待评价</td>
+                                    <tr ng-repeat="z in checkinList">
+                                        <td ng-bind="$index+1"></td>
+                                        <td ng-bind="z.recruitModel.title"></td>
+                                        <td ng-bind="z.recruitModel.positionModel.name"></td>
+                                        <td ng-bind="z.appUserModel.name"></td>
+                                        <td ng-bind="z.appUserModel.userModel.cellPhone"></td>
+                                        <td ng-bind="z.statusName"></td>
                                         <td>
-                                            <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-pencil"></i>待评价</button>
-                                            <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute" ui-sref="app.auditdemo({itemID:item.id})"><i class="icon icon-grid"></i>详细</button>
+                                            <button class="btn  btn-sm btn-success btn-addon" ng-click="assess(z)"><i class="icon icon-pencil"></i>待评价</button>
+                                            <button class="btn  btn-sm btn-info btn-addon" ng-click="minute(z.userId,z.recruitId)"><i class="icon icon-grid"></i>详细</button>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>欧尚发健身培训宣传单</td>
-                                        <td>促销员</td>
-                                        <td>张三</td>
-                                        <td>13526987456</td>
-                                        <td>待评价</td>
+                                    <tr ng-repeat="z in checkList">
+                                        <td ng-bind="$index+1"></td>
+                                        <td ng-bind="z.recruitModel.title"></td>
+                                        <td ng-bind="z.recruitModel.positionModel.name"></td>
+                                        <td ng-bind="z.appUserModel.name"></td>
+                                        <td ng-bind="z.appUserModel.userModel.cellPhone"></td>
+                                        <td ng-bind="z.statusName"></td>
                                         <td>
-                                            <button class="btn  btn-sm btn-success btn-addon"><i class="icon icon-pencil"></i>待评价</button>
-                                            <button class="btn  btn-sm btn-info btn-addon" ui-sref="app.minute"><i class="icon icon-grid"></i>详细</button>
+                                            <button class="btn  btn-sm btn-danger btn-addon" ng-click="rescind(z)"><i class="icon icon-action-undo"></i>取消邀请</button>
+                                            <button class="btn  btn-sm btn-info btn-addon" ng-click="minute(z.userId,z.recruitId)"><i class="icon icon-grid"></i>详细</button>
                                         </td>
                                     </tr>
                                     </tbody>
-                                    <tfoot class="hide-if-no-paging">
-                                    <tr>
-                                        <td colspan="10" class="text-center">
-                                            <ul class="pagination"></ul>
-                                        </td>
-                                    </tr>
-                                    </tfoot>
                                 </table>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row ">
+                                <div class="col-sm-12" style="float: left">
+                                    <tm-pagination conf="assessConf" class="paginationGid"></tm-pagination>
+                                </div>
                             </div>
                         </div>
                     </div>
