@@ -23,6 +23,7 @@ app.controller('warehouse', ['$scope', '$modal', '$log', '$resource', 'api','Sto
             }
         }
     );
+    getpassword.VIPlist();
     // getpassword.get({type: 'account/changePwd'}, function (data) {
     //     $scope.passwd = data.rows;
     // });
@@ -133,7 +134,13 @@ app.controller('ModalInstanceCtrl', ['$scope', '$modalInstance', '$filter', 'ite
     );
     getList.vipMonery(function (resp) {
         $scope.vipList=resp.rows;
+        console.log($scope.vipList);
     });
+
+
+
+
+
     // console.log(items);
     // var passwd = $resource($scope.url + 'vip/fee/option/list');
     // $scope.ok = function (){

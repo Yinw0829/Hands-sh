@@ -16,16 +16,15 @@
         var sec = 5;
         var timeid;
         function load1() {
-            timeid = setInterval("countdown()", 1000)
+            timeid=setInterval("countdown()",1000)
         }
         function countdown() {
-            if (sec > 0) {
-                document.getElementById("num").innerHTML = sec--
-            } else {
+            if (sec>0){
+                document.getElementById("num").innerHTML=sec--
+            }else{
                 clearInterval(timeid);
-                window.location.href = '/enterprise/#/app/job_normal'
-            }
-            ;
+                window.location.href='/enterprise/#/app/job_normal'
+            };
         }
     </script>
     <title>优职|支付成功</title>
@@ -35,8 +34,8 @@
     <div class="col-sm-12">
         <form role="form" class="form-horizontal">
             <div class="form-group text-center">
-                <img src="img/cuo.png">
-                <label class="text-left h1" style="color: #ff0000">支付失败，请您检查后再支付</label>
+                <img src="img/dui.png">
+                <label class="text-left h1" style="color: #10ac86">支付成功，恭喜您成为优职会员</label>
                 <br>
                 <label class="text-left h3">等待<span id="num">5</span>秒后进行跳转！</label>
             </div>
@@ -48,7 +47,8 @@
             </div>
         </form>
     </div>
-</div>
+
+
 </body>
 
 </html>

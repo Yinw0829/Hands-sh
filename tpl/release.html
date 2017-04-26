@@ -24,22 +24,22 @@
                                    class="form-control">
                             <div ng-show="myForm.handstitle.$dirty && myForm.handstitle.$error.maxlength"
                                  class="alert alert-danger help-block">
-                                用户名长度不能超过20位
+                                招聘标题长度不能超过20位
                             </div>
                             <div ng-show="myForm.handstitle.$dirty && myForm.handstitle.$error.minlength"
                                  class="alert alert-danger help-block">
-                                用户名长度不能小于5位
+                                招聘标题长度不能小于5位
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 control-label">职位类型：</label>
                         <div class="col-sm-3">
-                            <select class="form-control input-md w-lg inline m-r" ng-model="type"
+                            <select class="form-control input-md w-lg inline m-r"  ng-required="true" ng-model="type"
                                     ng-options="x.id as x.name for x in jobName"></select>
                         </div>
                         <div class="col-sm-3">
-                            <select class="form-control input-md w-lg inline m-r" ng-model="positionId"
+                            <select class="form-control input-md w-lg inline m-r" ng-required="true" ng-model="positionId"
                                     ng-show="type"
                                     ng-options="f.id as f.name for f in tipName | jobFilter:type"></select>
                         </div>
@@ -48,7 +48,7 @@
                         <label class="col-sm-3 control-label">招聘人数：</label>
                         <div class="col-sm-8">
                             <input type="number" name="count" ng-required="true"
-                                   class="form-control input-md w-lg inline m-r" autocomplete="off" min="1" max="99"
+                                   class="form-control input-md w-lg inline m-r" ng-required="true" autocomplete="off" min="1" max="99"
                                    ng-model="count" class="form-control">
                             <div class="alert alert-danger help-block" ng-show="myForm.count.$error.max">
                                 招聘人数不能超过99位
@@ -75,7 +75,7 @@
                             <div class="alert alert-danger help-block" ng-show="myForm.money.$error.min">
                                 薪资水平不能小于1位
                             </div>
-                            <select class="form-control w-sm inline " ng-model="salaryType"
+                            <select class="form-control w-sm inline " ng-required="true" ng-model="salaryType"
                                     ng-options="t.name as t.comment for t in SalaryType">
                             </select>
                         </div>
@@ -83,7 +83,7 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">结算方式：</label>
                         <div class="col-sm-8">
-                            <select class="form-control w-sm inline " ng-model="settlementType"
+                            <select class="form-control w-sm inline " ng-required="true" ng-model="settlementType"
                                     ng-options="x.name as x.comment for x in settem">
                             </select>
                         </div>
@@ -139,7 +139,7 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">工作地点：</label>
                         <div class="col-sm-8">
-                            <input id="mapText" type="text" class="form-control input-md w-lg inline m-r"
+                            <input id="mapText" type="text" class="form-control input-md w-lg inline m-r" ng-required="true"
                                    placeholder="请在地图上点击工作地点" disabled>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                     <div class="form-group">
                         <div class="wrapper-sm col-sm-8 col-sm-offset-2">
                             <div lazy-load="textAngular" style="margin-left: 27px;">
-                                <div text-angular ng-model="htmlVariable" class="btn-groups"></div>
+                                <div text-angular ng-model="htmlVariable" ng-required="true" class="btn-groups"></div>
                             </div>
                         </div>
                     </div>
@@ -164,7 +164,7 @@
                         <label class="col-sm-3 control-label">联系姓名：</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control input-md w-lg inline m-r"
-                                   ng-model="contactPerson "/>
+                                   ng-required="true"  ng-model="contactPerson "/>
                         </div>
                     </div>
                     <div class="form-group">
@@ -172,7 +172,7 @@
                         <div class="col-sm-8">
                             <input type="tel" name="tel" ng-required="true"
                                    class="form-control input-md w-lg inline m-r" autocomplete="off"
-                                   ng-pattern="/^1[3|5][0-9]\d{4,8}$/" ng-minlength="11" ng-maxlength="11"
+                                   ng-pattern="/^1[3|4|5|7|8][0-9]{9}$/" ng-minlength="11" ng-maxlength="11"
                                    ng-model="contactPhone" class="form-control">
                             <div class="alert alert-danger help-block" ng-show="myForm.tel.$error.maxlength">
                                 手机号不能小于11位
@@ -188,7 +188,7 @@
                     <div class="form-group">
                         <label class="col-sm-3 control-label">面试地址：</label>
                         <div class="col-sm-9">
-                            <select class="form-control w-lg inline " ng-model="interviewAddressId"
+                            <select class="form-control w-lg inline " ng-required="true" ng-model="interviewAddressId"
                                     ng-options="x.id as x.address for x in inter">
                             </select>
                         </div>

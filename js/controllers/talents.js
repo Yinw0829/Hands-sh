@@ -5,6 +5,7 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
         {
             status: '@status',
             recruitId: '@recruitId',
+            userId:'@userId',
             curPage: "@curPage",
             pageSize: "@pageSize"
         },
@@ -17,7 +18,6 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
             }
         }
     );
-
     //库列表
     $scope.paginationConf = {
         currentPage: 1,
@@ -28,7 +28,7 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
         onChange: function () {
             var paginationConf = function () {
                 getinter.interList(
-                    {type: 'list'},
+                    {type: 'load'},
                     {
                         curPage: $scope.paginationConf.currentPage,
                         pageSize: $scope.paginationConf.itemsPerPage
@@ -36,10 +36,15 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
                     function (data) {
                         $scope.paginationConf.totalItems = data.total;
                         $scope.interList = data.rows;
+                        console.log($scope.interList)
                     });
             };
             $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage', paginationConf)
         }
+    };
+    $scope.filterNull=function (person) {
+        // return person.interviewModel.recruitCheckInModel.checkInReviewModel!==null;
+        return person.interviewModel.recruitCheckInModel!==null;
     };
     //删除
     $scope.del = function (item) {
@@ -64,8 +69,13 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
     };
     //查看评价
     $scope.evaluate = function (id,recruitId) {
-        getinter.loadList({recruitId: recruitId, userId: id}, function (resp) {
-            $scope.groups = resp.result;
+        var item = id;
+        var items = recruitId;
+        console.log(item);
+        console.log(items);
+        getinter.interList({type:'load'},{recruitId: items, userId: item}, function (resp) {
+            $scope.groups = resp.rows;
+            console.log($scope.groups);
         });
         var modalInstance = $modal.open({
             templateUrl: 'tpl/model/bring/bring.evaluate.html',

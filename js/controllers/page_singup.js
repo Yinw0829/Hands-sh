@@ -10,7 +10,7 @@ app.filter('cityFilter', [function ($scope) {
     }
 }]);
 
-app.controller('handsController', ['$http', '$scope', '$interval', '$state', 'Upload', 'api', '$resource', 'province', 'Storage', function ($http, $scope, $interval, $state, Upload, api, $resource, province, Storage) {
+app.controller('pageSingUpController', ['$http', '$scope', '$interval', '$state', 'Upload', 'api', '$resource', 'province', 'Storage', function ($http, $scope, $interval, $state, Upload, api, $resource, province, Storage) {
     var cityKey = 'city';
     province.logCity();
     $scope.$on('city.services', function () {
@@ -20,20 +20,16 @@ app.controller('handsController', ['$http', '$scope', '$interval', '$state', 'Up
     $scope.cities = Storage.get(cityKey);
     // $scope.province = $scope.cities[10].code;
     var url = api.url;
-
-
     var upLoad = $resource(
         url, {}, {
             industry: {
-                url: url + 'industry/list',
+                url: url + '/industry/list',
                 method: 'GET',
                 isArray: false
-            },
-            minute: {url: url + 'sms/sendByCaptcha', method: 'POST', isArray: false}
+            }
         }
     );
-    upLoad.get({type: 'district/list'}, function (data) {
-        // $scope.district = data.rows;
+    upLoad.get({type: '/district/list'}, function (data) {
         $scope.cities = data.rows;
         $scope.citiesId = $scope.cities[0].id;
     });
@@ -43,96 +39,83 @@ app.controller('handsController', ['$http', '$scope', '$interval', '$state', 'Up
         // $scope.industryId=$scope.industryList[0].id;
         // console.log($scope.industryId);
     });
+
+    upLoad.save({type: '/captcha'}, function (data) {
+        $scope.captchas = data.rows;
+    });
+
+
+    $scope.isDisable = false;
+    var time = 3; //默认秒数
+    var stop;
+    $scope.send = '发送验证码';
+    $scope.transmit = function () {
+        if ($scope.captcha !== undefined && $scope.cellPhone !== undefined) {
+            $http({
+                method: 'POST',
+                url: 'api/sms/sendByCaptcha',
+                data: {cellPhone: $scope.cellPhone, captcha: $scope.captcha, type: 'REG'}
+            }).success(
+                function (data) {
+                    alert(data);
+                    if (data.success) {
+                        // break;
+                    } else {
+                        $scope.authError = data.msg;
+                        console.log($scope.authError);
+                    }
+                }
+            );
+            //验证码和手机号码都不为空的时候
+            stop = $interval(
+                function () {
+                    if (time > 0) {
+                        time--;
+                        $scope.send = time + "秒后重新发送";
+                        $scope.isDisable = true;
+                    } else {
+                        $scope.send = '重新发送';
+                        time = 3;
+                        $scope.isDisable = false;
+                        $interval.cancel(stop);
+                    }
+                }, 1000);
+        } else if ($scope.captcha == undefined || $scope.captcha.length < 4) {
+            alert('图形验证码有误，请检查！')
+        } else if ($scope.cellPhone == undefined || $scope.cellPhone.length<11) {
+            alert('手机号码有误，请检查！')
+        }
+        // else {
+        //     $http({
+        //         method: 'POST',
+        //         url: '/sendSms',
+        //         data: {cellPhone: $scope.cellPhone, captcha: $scope.captcha, type: 'REG'}
+        //     }).success(
+        //             function (data) {
+        //                 alert(data);
+        //                 if (data.success) {
+        //                     // break;
+        //                 } else {
+        //                     $scope.authError = data.msg;
+        //                     alert(data.msg);
+        //                 }
+        //             }
+        //         );
+        // }
+    };
     $scope.imgUrl = url + 'captcha?time=' + (new Date()).getTime();
     $scope.imgclick = function () {
         $scope.imgUrl = url + 'captcha?time=' + (new Date()).getTime();
     };
-
-    $scope.send = '发送验证码';
-    $scope.isDisable = false;
-    var time = 3; //秒
-    var stop;
-    $scope.minute = function () {
-        if ($scope.captcha == null) {
-            alert('请检查验证码')
-        } else if ($scope.cellPhone == null) {
-            alert('请检查手机号码')
-        }
-        var data = {
-            cellPhone: $scope.cellPhone,
-            captcha: $scope.captcha,
-            type: 'REG'
-        };
-        upLoad.minute(data, function (reg) {
-                if (reg.success) {
-                    alert('短信发送成功！')
-                } else {
-                    alert(data.msg);
-                }
-            }
-        );
-        stop = $interval(
-            function () {
-                if (time > 0) {
-                    time--;
-                    $scope.send = time + "秒后重新发送";
-                    $scope.isDisable = true;
-                } else {
-                    $scope.send = '重新发送';
-                    time = 3;
-                    $scope.isDisable = false;
-                    $interval.cancel(stop);
-                }
-            }, 1000)
-
-    };
-    // $scope.minute = function () {
-    //     if ($scope.captcha == null) {
-    //         alert('请检查验证码')
-    //     } else if ($scope.cellPhone == null) {
-    //         alert('请检查手机号码')
-    //     } else {
-    //         Upload.upload({
-    //             method: 'POST',
-    //             url: 'api/sms/sendByCaptcha',
-    //             data: {cellPhone: $scope.cellPhone, captcha: $scope.captcha, type: 'REG'}
-    //         })
-    //             .success(
-    //                 function (data) {
-    //                     if (data.success) {
-    //                         alert('短信发送成功！')
-    //                     } else {
-    //                         alert(data.msg);
-    //                     }
-    //                 }
-    //             );
-    //         stop = $interval(
-    //             function () {
-    //                 if (time > 0) {
-    //                     time--;
-    //                     $scope.send = time + "秒后重新发送";
-    //                     $scope.isDisable = true;
-    //                 } else {
-    //                     $scope.send = '重新发送';
-    //                     time = 3;
-    //                     $scope.isDisable = false;
-    //                     $interval.cancel(stop);
-    //                 }
-    //             }, 1000)
-    //     }
-    //     alert($scope.cellPhone);
-    //     alert($scope.captcha);
-    // };
-
+    $scope.$watch('cellPhone+captcha', function (newValue, oldValue) {
+        $scope.authError = ''
+    });
     $scope.uploadImg = '';
-
-
     $scope.submit = function () {
         $scope.upload($scope.file);
     };
     $scope.upload = function (file) {
         $scope.fileInfo = file;
-        console.log($scope.fileInfo);
         Upload.upload({
             method: 'POST',
             url: 'api/register',
@@ -151,13 +134,10 @@ app.controller('handsController', ['$http', '$scope', '$interval', '$state', 'Up
             }
         }).success(function (data, status, headers, config) {
             if (data.success) {
-                console.log(data.msg);
-                console.log(data);
-                $state.go('access.signin');
+                $scope.auError = '申请成功，请耐心等待管理员审核';
             } else {
-                console.log(data.msg);
+                $scope.auError = data.msg;
             }
         });
     };
-}])
-;
+}]);

@@ -90,7 +90,7 @@ app.controller('deleteCtrl', ['$scope', '$modalInstance', '$resource',function (
 
 //新增
 app.controller('ModalInstanceCtrl', ['$scope', '$modalInstance', '$resource', function ($scope, $modalInstance, $resource) {
-    var postName = $resource($scope.url + '/address/add');
+    var postName = $resource($scope.url + 'address/add');
     $scope.ok = function () {
         postName.save({address:$scope.newAdds},function () {
             $modalInstance.close();

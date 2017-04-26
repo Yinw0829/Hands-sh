@@ -14,8 +14,8 @@
         </div>
     </div>
     <div class="wrapper-md">
-        <div class="panel ">
-            <div class="panel-body">
+        <div class="panel">
+            <div class="table-responsive">
                 <div class="table-responsive">
                     <table class="table m-b-none">
                         <thead>
@@ -42,19 +42,18 @@
                             <td ng-bind="y.contactPhone"></td>
                             <td ng-bind="y.jobAddress"></td>
                             <td>
-                                <button class="btn  btn-sm btn-success btn-addon" ng-click="moreClick(y.id)"><i
-                                        class="icon icon-grid"></i>查看详细
+                                <button class="btn  btn-sm btn-success btn-addon" ng-click="moreClick(y.id,y.recruitId)"><i class="icon icon-grid"></i>查看详细
                                 </button>
                             </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <div class="panel-footer">
-                <div class="row ">
-                    <div class="col-sm-12">
-                        <tm-pagination conf="paginationConf" class="paginationGid"></tm-pagination>
+                <div class="panel-footer">
+                    <div class="row ">
+                        <div class="col-sm-12">
+                            <tm-pagination conf="paginationConf" class="paginationGid"></tm-pagination>
+                        </div>
                     </div>
                 </div>
             </div>

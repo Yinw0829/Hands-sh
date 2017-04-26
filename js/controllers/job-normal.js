@@ -6,12 +6,29 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
             status: '@status',
             id: '@id',
             curPage: "@curPage",
-            pageSize: "@pageSize"
+            pageSize: "@pageSize",
+            recruitId: '@recruitId'
         },
         {
             jobNormal:{method: 'get', params: {status: 'NORMAL'}, isArray: false},
             jobprohibit:{method: 'get', params: {status: 'STOPED'}, isArray: false}
 
+        }
+    );
+    $scope.url = api.url + 'interviewApply/';
+    var getinter = $resource(
+        $scope.url + ':type',
+        {
+            recruitId: "@recruitId",
+            userId:"@userId"
+        },
+        {
+            //获取列表
+            particular:{
+                url:$scope.url + 'list',
+                method: 'GET',
+                isArray: false
+            }
         }
     );
     //正常状态
@@ -32,6 +49,7 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
                     function (data) {
                         $scope.paginationConf.totalItems = data.total;
                         $scope.jobNormal = data.rows;
+                        console.log($scope.jobNormal);
                     });
             };
             $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage', paginationConf)
@@ -59,10 +77,14 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
             $scope.$watch('disabledConf.currentPage + disabledConf.itemsPerPage', disabledConf)
         }
     };
-
+    //详细
     $scope.moreClick = function (id) {
+        console.log(id);
         getBring.get({type: 'load'}, {id: id}, function (data) {
             $scope.more = data.result;
+        });
+        getinter.particular({recruitId:id},function (resp) {
+            $scope.jobLi = resp.rows;
         });
         var modalInstance = $modal.open({
             templateUrl: 'tpl/model/normal.detail.html',

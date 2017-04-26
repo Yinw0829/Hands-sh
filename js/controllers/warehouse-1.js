@@ -228,6 +228,7 @@ app.controller('warehouse1', ['$scope', '$modal', '$log', '$resource', 'api', 'S
                     function (data) {
                         $scope.assessConf.totalItems = data.total;
                         $scope.checkinList = data.rows;
+                        console.log($scope.checkinList);
                     });
                 getCheck.checkList(
                     {type: 'list'},
@@ -238,6 +239,7 @@ app.controller('warehouse1', ['$scope', '$modal', '$log', '$resource', 'api', 'S
                     function (data) {
                         $scope.assessConf.totalItems = data.total;
                         $scope.checkList = data.rows;
+                        console.log($scope.checkList);
                     });
             };
             $scope.$watch('assessConf.currentPage + assessConf.itemsPerPage', assessConf)
@@ -286,6 +288,7 @@ app.controller('warehouse1', ['$scope', '$modal', '$log', '$resource', 'api', 'S
     $scope.minute = function (id, recruitId) {
         getinter.minuteLoad({userId: id}, function (resp) {
             $scope.item = resp.result;
+            console.log($scope.item);
         });
         getApply.experienceList({recruitId: recruitId, userId: id}, function (resp) {
             $scope.groups = resp.rows;

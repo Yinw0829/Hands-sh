@@ -16,8 +16,9 @@ var app = angular.module('app')
         $provide.provider('httpServe',function () {
             this.$get = function () {
                 return{
-                    // httpUrl:'api'
-                    httpUrl:'hands'
+                    httpUrl:'api'
+                    // httpUrl:'hands'
+                    // httpUrl:'https://www.icewnet.com/manager/api/'
                 }
             }
         })

@@ -5,7 +5,7 @@
             <strong>登录</strong>
         </div>
         <form name="form" class="form-validation">
-            <div class="text-danger wrapper text-center" ng-show="authError">
+            <div class="text-danger wrapper text-center">
                 {{authError}}
             </div>
             <div class="list-group list-group-sm">
@@ -17,17 +17,17 @@
                     <input type="password" placeholder="登录密码" class="form-control no-border" ng-model="password"
                            required>
                 </div>
-                <!--<div class="list-group-item">-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-sm-7">-->
-                            <!--<input type="tel" placeholder="请输入图片验证码" class="form-control no-border" ng-model="captcha"-->
-                                   <!--required>-->
-                        <!--</div>-->
-                        <!--<div class="col-sm-5">-->
-                            <!--<img ng-click="imgclick()" ng-src="{{imgUrl}}">-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+                <div class="list-group-item">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <input type="tel" placeholder="请输入图片验证码" class="form-control no-border" ng-model="captcha"
+                                   required>
+                        </div>
+                        <div class="col-sm-5">
+                            <img ng-click="imgclick()" ng-src="{{imgUrl}}">
+                        </div>
+                    </div>
+                </div>
             </div>
             <button type="submit" class="btn btn-lg btn-success btn-block" ng-click="login()"
                     ng-disabled='form.$invalid'>登录

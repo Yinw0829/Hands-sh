@@ -10,14 +10,14 @@
                         <label class="col-sm-2 control-label"><strong>招聘标题：</strong></label>
                         <label class=" control-label" ng-bind="more.title"></label>
                     </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label"><strong>浏览量：</strong></label>
-                        <label class=" control-label" ng-bind="more.title"></label>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-2 control-label"><strong>投递量：</strong></label>
-                        <label class=" control-label" ng-bind="more.title"></label>
-                    </div>
+                    <!--<div class="form-group">-->
+                        <!--<label class="col-sm-2 control-label"><strong>浏览量：</strong></label>-->
+                        <!--<label class=" control-label" ng-bind="more.title"></label>-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label class="col-sm-2 control-label"><strong>投递量：</strong></label>-->
+                        <!--<label class=" control-label" ng-bind="more.title"></label>-->
+                    <!--</div>-->
                     <div class="form-group">
                         <label class="col-sm-2 control-label"><strong>招聘岗位：</strong></label>
                         <label class=" control-label" ng-bind="more.positionModel.name"></label>
@@ -63,10 +63,10 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>张三</td>
-                                    <td>2015.10.10</td>
-                                    <td>待邀请</td>
+                                <tr ng-repeat="item in jobLi">
+                                    <td ng-bind="item.appUserModel.name"></td>
+                                    <td ng-bind="item.cTime">2015.10.10</td>
+                                    <td ng-bind="item.interviewModel.recruitCheckInModel.statusName">待邀请</td>
                                 </tr>
                                 </tbody>
                             </table>

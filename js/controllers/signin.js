@@ -4,20 +4,24 @@ app.controller('SigninFormController', ['$scope', '$modal', '$http', '$state', '
         url,
         {},
         {
-            enter: {url: url + '/login', method: 'POST', isArray: false}
+            enter: {url: url + 'login', method: 'POST', isArray: false}
         }
     );
+    $scope.imgclick = function () {
+        $scope.imgUrl = url + 'captcha?time=' + (new Date()).getTime();
+    };
     $scope.login = function () {
         var data = {
             userName: $scope.userName,
-            password: $scope.password
-            // captcha: $scope.captcha
+            password: $scope.password,
+            captcha: $scope.captcha
         };
         getup.enter(data, function (reg) {
             if (reg.success) {
                 $state.go('app.job_normal');
                 Storage.set('user', reg.result)
             } else {
+                $scope.imgclick();
                 $scope.authError = reg.msg;
             }
         });
@@ -27,7 +31,5 @@ app.controller('SigninFormController', ['$scope', '$modal', '$http', '$state', '
         $scope.authError = ''
     });
     $scope.imgUrl = url + 'captcha?time=' + (new Date()).getTime();
-    $scope.imgclick = function () {
-        $scope.imgUrl = url + 'captcha?time=' + (new Date()).getTime();
-    };
+
 }]);

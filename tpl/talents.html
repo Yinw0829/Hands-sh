@@ -17,17 +17,15 @@
                                 <th>序号</th>
                                 <th>姓名</th>
                                 <th>联系电话</th>
-                                <th>入职次数</th>
                                 <th>最近入职时间</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="x in interList">
+                            <tr ng-repeat="x in interList | filter:filterNull">
                                 <td ng-bind="$index+1"></td>
                                 <td ng-bind="x.appUserModel.name"></td>
                                 <td ng-bind="x.appUserModel.userModel.cellPhone"></td>
-                                <td>3次</td>
                                 <td ng-bind="x.appUserModel.userModel.lastLoginTime"></td>
                                 <td>
                                     <button class="btn  btn-sm btn-success btn-addon" ng-click="evaluate(x.userId,x.recruitId)"><i class="icon icon-grid"></i>查看评价
@@ -43,7 +41,7 @@
                     <div class="panel-footer">
                         <div class="row ">
                             <div class="col-sm-12">
-                                <tm-pagination conf="paginationConf" class="paginationGid"></tm-pagination>
+                                <tm-pagination conf="paginationConf" class="paginationGid text-center"></tm-pagination>
                             </div>
                         </div>
                     </div>
