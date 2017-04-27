@@ -17,18 +17,20 @@
                                 <th>序号</th>
                                 <th>姓名</th>
                                 <th>联系电话</th>
+                                <th>申请次数</th>
                                 <th>最近入职时间</th>
                                 <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="x in interList | filter:filterNull">
+                            <tr ng-repeat="x in interList">
                                 <td ng-bind="$index+1"></td>
                                 <td ng-bind="x.appUserModel.name"></td>
                                 <td ng-bind="x.appUserModel.userModel.cellPhone"></td>
+                                <td ng-bind="x.checkinCount"></td>
                                 <td ng-bind="x.appUserModel.userModel.lastLoginTime"></td>
                                 <td>
-                                    <button class="btn  btn-sm btn-success btn-addon" ng-click="evaluate(x.userId,x.recruitId)"><i class="icon icon-grid"></i>查看评价
+                                    <button class="btn  btn-sm btn-success btn-addon" ng-click="evaluate(x.appUserModel.userId)"><i class="icon icon-grid"></i>查看评价
                                     </button>
                                     <button class="btn  btn-sm btn-danger btn-addon" ng-click="del(x)"><i class="glyphicon  glyphicon-remove"></i>删除
                                     </button>

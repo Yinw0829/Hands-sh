@@ -125,7 +125,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr ng-repeat="z in checkinList">
+                                    <tr ng-repeat="z in checkinList | filter:filterNull">
                                         <td ng-bind="$index+1"></td>
                                         <td ng-bind="z.recruitModel.title"></td>
                                         <td ng-bind="z.recruitModel.positionModel.name"></td>
@@ -137,7 +137,7 @@
                                             <button class="btn  btn-sm btn-info btn-addon" ng-click="minute(z.userId,z.recruitId)"><i class="icon icon-grid"></i>详细</button>
                                         </td>
                                     </tr>
-                                    <tr ng-repeat="z in checkList">
+                                    <tr ng-repeat="z in checkList | filter:filterNull">
                                         <td ng-bind="$index+1"></td>
                                         <td ng-bind="z.recruitModel.title"></td>
                                         <td ng-bind="z.recruitModel.positionModel.name"></td>

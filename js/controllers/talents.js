@@ -1,5 +1,5 @@
 app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'Storage', '$state', function ($scope, $modal, $log, $resource, api, Storage, $state) {
-    $scope.url = api.url +'checkin/';
+    $scope.url = api.url;
     var getinter = $resource(
         $scope.url + ':type',
         {
@@ -10,9 +10,13 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
             pageSize: "@pageSize"
         },
         {
-            interList: {method: 'get', params: {status: 'SUCCESS'}, isArray: false},
+            interList: {
+                url: $scope.url + 'talent/bank/list',
+                method: 'get',
+                isArray: false
+            },
             loadList:{
-                url: $scope.url + 'review/load',
+                url: $scope.url + 'checkin/review/list',
                 method: 'GET',
                 isArray: false
             }
@@ -28,7 +32,7 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
         onChange: function () {
             var paginationConf = function () {
                 getinter.interList(
-                    {type: 'load'},
+                    // {type: 'talent/bank/list'},
                     {
                         curPage: $scope.paginationConf.currentPage,
                         pageSize: $scope.paginationConf.itemsPerPage
@@ -36,15 +40,11 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
                     function (data) {
                         $scope.paginationConf.totalItems = data.total;
                         $scope.interList = data.rows;
-                        console.log($scope.interList)
+                        console.log($scope.interList);
                     });
             };
             $scope.$watch('paginationConf.currentPage + paginationConf.itemsPerPage', paginationConf)
         }
-    };
-    $scope.filterNull=function (person) {
-        // return person.interviewModel.recruitCheckInModel.checkInReviewModel!==null;
-        return person.interviewModel.recruitCheckInModel!==null;
     };
     //删除
     $scope.del = function (item) {
@@ -68,15 +68,9 @@ app.controller('talensCtrl', ['$scope', '$modal', '$log', '$resource', 'api', 'S
         });
     };
     //查看评价
-    $scope.evaluate = function (id,recruitId) {
-        var item = id;
-        var items = recruitId;
-        console.log(item);
-        console.log(items);
-        getinter.interList({type:'load'},{recruitId: items, userId: item}, function (resp) {
-            $scope.groups = resp.rows;
-            console.log($scope.groups);
-        });
+    $scope.evaluate = function (userId) {
+        $scope.item = userId;
+        console.log($scope.item);
         var modalInstance = $modal.open({
             templateUrl: 'tpl/model/bring/bring.evaluate.html',
             controller: 'examineCtrl',
@@ -111,6 +105,16 @@ app.controller('refuseCtrl', ['$scope', '$modalInstance', '$filter', 'items', '$
 }]);
 // 查看评价
 app.controller('examineCtrl', ['$scope', '$modalInstance', '$filter', 'items', '$resource', '$state', function ($scope, $modalInstance, $filter, items, $resource, $state) {
+    console.log(items);
+    var item = items;
+    var getinter = $resource(
+        $scope.url + 'checkin/review/list',
+        {},
+        {loadList: {method: 'GET', isArray: false}});
+    getinter.loadList({userId: item}, function (resp) {
+        $scope.groups = resp.rows;
+        console.log($scope.groups);
+    });
     $scope.comp = function () {
         $modalInstance.close(items);
     };

@@ -1,5 +1,5 @@
 app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$resource', '$timeout',function ($scope, $modal, $http, $filter, api, $resource, $timeout) {
-    $scope.url = api.url + 'recruit/';
+    $scope.url = api.url;
     var getBring = $resource(
         $scope.url + ':type',
         {
@@ -10,12 +10,22 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
             recruitId: '@recruitId'
         },
         {
-            jobNormal:{method: 'get', params: {status: 'NORMAL'}, isArray: false},
-            jobprohibit:{method: 'get', params: {status: 'STOPED'}, isArray: false}
+            jobNormal:{
+                url: $scope.url + 'recruit/list',
+                method: 'get',
+                params: {status: 'NORMAL'},
+                isArray: false
+            },
+            jobprohibit:{
+                url: $scope.url + 'recruit/list',
+                method: 'get',
+                params: {status: 'STOPED'},
+                isArray: false
+            }
 
         }
     );
-    $scope.url = api.url + 'interviewApply/';
+    $scope.url = api.url;
     var getinter = $resource(
         $scope.url + ':type',
         {
@@ -25,7 +35,12 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
         {
             //获取列表
             particular:{
-                url:$scope.url + 'list',
+                url:$scope.url + 'interviewApply/list',
+                method: 'GET',
+                isArray: false
+            },
+            moreMinute:{
+                url:$scope.url + 'recruit/load',
                 method: 'GET',
                 isArray: false
             }
@@ -41,7 +56,7 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
         onChange: function () {
             var paginationConf = function () {
                 getBring.jobNormal(
-                    {type:'list'},
+                    // {type:'list'},
                     {
                         curPage: $scope.paginationConf.currentPage,
                         pageSize: $scope.paginationConf.itemsPerPage
@@ -65,7 +80,7 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
         onChange: function () {
             var disabledConf = function () {
                 getBring.jobprohibit(
-                    {type:'list'},
+                    // {type:'list'},
                     {
                         curPage: $scope.disabledConf.currentPage,
                         pageSize: $scope.disabledConf.itemsPerPage
@@ -80,7 +95,7 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
     //详细
     $scope.moreClick = function (id) {
         console.log(id);
-        getBring.get({type: 'load'}, {id: id}, function (data) {
+        getinter.moreMinute({id: id}, function (data) {
             $scope.more = data.result;
         });
         getinter.particular({recruitId:id},function (resp) {
@@ -102,7 +117,7 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
         });
     };
     $scope.Click = function (id) {
-        getBring.get({type: 'load'}, {id: id}, function (data) {
+        getBring.get({type: 'recruit/load'}, {id: id}, function (data) {
             $scope.item = data.result;
         });
         var modalInstance = $modal.open({
@@ -121,9 +136,9 @@ app.controller('bringList', ['$scope', '$modal', '$http', '$filter', 'api', '$re
         });
     }
 }]);
-
+//停止招聘
 app.controller('ParticularCtrl', ['$scope', '$modalInstance', '$filter', 'items', '$resource', function ($scope, $modalInstance, $filter, items, $resource) {
-    var stops = $resource($scope.url + 'stop');
+    var stops = $resource($scope.url + 'recruit/stop');
     $scope.stop = function (id) {
         stops.save({id: id}, function () {
             $modalInstance.close(items);
@@ -133,6 +148,7 @@ app.controller('ParticularCtrl', ['$scope', '$modalInstance', '$filter', 'items'
         $modalInstance.close(items)
     }
 }]);
+// 过期查看
 app.controller('PastCtrl', ['$scope', '$modalInstance', '$filter', 'items', '$resource', function ($scope, $modalInstance, $filter, items, $resource) {
     $scope.ok = function () {
         $modalInstance.close(items)

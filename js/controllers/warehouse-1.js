@@ -63,6 +63,11 @@ app.controller('warehouse1', ['$scope', '$modal', '$log', '$resource', 'api', 'S
         }
     );
 
+    $scope.filterNull=function (person) {
+        return person.checkInReviewModel == null;
+        // return person.interviewModel.recruitCheckInModel!==null;
+    };
+
     //申请状态
     $scope.paginationConf = {
         currentPage: 1,

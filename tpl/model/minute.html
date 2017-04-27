@@ -26,9 +26,7 @@
                             <label class="col-sm-2 control-label"><strong>个人风采：</strong></label>
                             <div class="row">
                                 <div class="col-sm-1">
-                                    <a class="thumbnail">
-                                        <img ng-bind="item.appUserModel.avatar">
-                                    </a>
+                                        <img ng-src="api/account/lience?userId={{item.appUserModel.avatar}}">
                                 </div>
                             </div>
                         </div>
@@ -45,7 +43,6 @@
                                         <th>公司名称</th>
                                         <th>面试岗位</th>
                                         <th>申请时间</th>
-                                        <th>评价详细</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -53,10 +50,6 @@
                                         <td ng-bind="group.checkInModel.recruitModel.enterpriseUserModel.name"></td>
                                         <td ng-bind="group.checkInModel.recruitModel.positionModel.name"></td>
                                         <td ng-bind="group.checkInModel.cTime"></td>
-                                        <!--<td class="col-sm-2" ng-bind="group.checkInModel.checkInReviewModel.content"></td>-->
-                                        <td>
-                                            <button class="btn  btn-sm btn-success btn-addon">查看评价</button>
-                                        </td>
                                     </tr>
                                     </tbody>
                                 </table>
